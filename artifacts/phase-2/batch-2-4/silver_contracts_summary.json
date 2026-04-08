@@ -1,0 +1,141 @@
+{
+  "required_fields_check": {
+    "name": "required_fields_check",
+    "success": true,
+    "details": {
+      "null_counts": {
+        "event_id": 0,
+        "event_timestamp": 0,
+        "user_pseudo_id": 0,
+        "source_channel": 0,
+        "session_id": 0
+      },
+      "failing_columns": {}
+    }
+  },
+  "schema_drift_checks": [
+    {
+      "name": "schema_drift_check:events",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:event_params",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:event_items",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:sessions",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:dim_channel",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:dim_campaign",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:dim_device",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "schema_drift_check:dim_geography",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    }
+  ],
+  "ge_style_checks": [
+    {
+      "name": "ge_null_checks",
+      "success": true,
+      "details": {
+        "null_counts": {
+          "event_id": 0,
+          "event_timestamp": 0,
+          "user_pseudo_id": 0,
+          "source_channel": 0
+        }
+      }
+    },
+    {
+      "name": "ge_uniqueness_checks",
+      "success": true,
+      "details": {
+        "duplicate_event_id_rows": 0
+      }
+    },
+    {
+      "name": "ge_range_checks",
+      "success": true,
+      "details": {
+        "invalid_event_count_rows": 0
+      }
+    }
+  ],
+  "referential_integrity_checks": [
+    {
+      "name": "ge_referential_event_params",
+      "success": true,
+      "details": {
+        "orphan_param_rows": 0
+      }
+    },
+    {
+      "name": "ge_referential_event_items",
+      "success": true,
+      "details": {
+        "orphan_item_rows": 0
+      }
+    },
+    {
+      "name": "ge_referential_campaign_channel",
+      "success": true,
+      "details": {
+        "invalid_campaign_channel_rows": 0
+      }
+    }
+  ],
+  "all_contracts_passed": true,
+  "quarantine_workflow": {
+    "quarantined_count": 1,
+    "quarantine_path": "artifacts/phase-2/batch-2-4/quarantine/failed_records.jsonl",
+    "remediation_path": "artifacts/phase-2/batch-2-4/quarantine/remediation_candidates.csv"
+  },
+  "great_expectations_suite": "quality/great_expectations/suites/silver_events_quality_suite.json",
+  "great_expectations_checkpoint": "quality/great_expectations/checkpoints/silver_quality_checkpoint.yml"
+}

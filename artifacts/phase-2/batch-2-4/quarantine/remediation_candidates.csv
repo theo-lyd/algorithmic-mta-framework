@@ -1,0 +1,2 @@
+event_id,source_name,source_file_id,event_name,event_timestamp,event_date,user_pseudo_id,source_channel,campaign_name,device_type,device_os,country_code,country_name,city_name,session_seq,session_start_ts,session_id,quarantine_reason,quarantine_ts
+,ga4,ga4_20260410_00.json,page_view,2026-04-10 10:00:00+00:00,2026-04-10,u-100,search,spring_sale,mobile,android,DE,Germany,Berlin,1,2026-04-10 10:00:00+00:00,u-100|2026-04-10T10:00:00+00:00,required_event_id_missing,2026-04-08T03:47:00.479371+00:00
