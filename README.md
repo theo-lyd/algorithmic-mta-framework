@@ -183,6 +183,17 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Closure Batch Report: [doc/batches/phase-2-batch-2-5-closure-report.md](doc/batches/phase-2-batch-2-5-closure-report.md)
 	- Closure Command Log: [doc/batches/phase-2-batch-2-5-commands.md](doc/batches/phase-2-batch-2-5-commands.md)
 
+### Phase 3 Batch Artifacts
+- **Batch 3.1 (Dimensional Modeling and SCD Type 2)**
+	- Campaign SCD2 Logic: [ingestion/pipeline/campaign_scd2.py](ingestion/pipeline/campaign_scd2.py)
+	- Change Fixtures: [tests/fixtures/phase3/campaign_changes.json](tests/fixtures/phase3/campaign_changes.json)
+	- Event Fixtures: [tests/fixtures/phase3/campaign_events.json](tests/fixtures/phase3/campaign_events.json)
+	- Unit Tests: [tests/phase3/test_campaign_scd2.py](tests/phase3/test_campaign_scd2.py)
+	- Validation Runner: [ingestion/pipeline/validate_campaign_scd2.py](ingestion/pipeline/validate_campaign_scd2.py)
+	- Validation Evidence: [doc/phase-3/batch-3-1-scd2-validation.md](doc/phase-3/batch-3-1-scd2-validation.md)
+	- Batch Report: [doc/batches/phase-3-batch-3-1-report.md](doc/batches/phase-3-batch-3-1-report.md)
+	- Command Log: [doc/batches/phase-3-batch-3-1-commands.md](doc/batches/phase-3-batch-3-1-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
