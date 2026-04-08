@@ -91,6 +91,16 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-1-batch-1-3-report.md](doc/batches/phase-1-batch-1-3-report.md)
 	- Command Log: [doc/batches/phase-1-batch-1-3-commands.md](doc/batches/phase-1-batch-1-3-commands.md)
 
+- **Batch 1.4 (Ingestion Observability and Recovery Controls)**
+	- Observability Checks: [ingestion/pipeline/observability.py](ingestion/pipeline/observability.py)
+	- Dead-Letter and Alert Helpers: [ingestion/pipeline/dead_letter.py](ingestion/pipeline/dead_letter.py)
+	- Observability DAG: [airflow/dags/ingestion_observability.py](airflow/dags/ingestion_observability.py)
+	- Validation Runner: [ingestion/pipeline/validate_observability.py](ingestion/pipeline/validate_observability.py)
+	- Validation Evidence: [doc/phase-1/batch-1-4-observability-validation.md](doc/phase-1/batch-1-4-observability-validation.md)
+	- Backfill Playbook: [doc/phase-1/batch-1-4-backfill-playbook.md](doc/phase-1/batch-1-4-backfill-playbook.md)
+	- Batch Report: [doc/batches/phase-1-batch-1-4-report.md](doc/batches/phase-1-batch-1-4-report.md)
+	- Command Log: [doc/batches/phase-1-batch-1-4-commands.md](doc/batches/phase-1-batch-1-4-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
