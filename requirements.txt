@@ -1,0 +1,9 @@
+duckdb==1.1.2
+pandas==2.1.4
+pyarrow==18.0.0
+dbt-core==1.9.0
+dbt-duckdb==1.9.0
+apache-airflow==2.9.3
+great-expectations==1.2.4
+scikit-learn==1.5.2
+streamlit==1.40.1

@@ -1,0 +1,21 @@
+services:
+  workspace:
+    image: mcr.microsoft.com/devcontainers/python:3.11
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace
+    command: sleep infinity
+
+  airflow:
+    image: apache/airflow:2.9.3
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+    ports:
+      - "8080:8080"
+
+  metabase:
+    image: metabase/metabase:v0.53.7
+    ports:
+      - "3000:3000"

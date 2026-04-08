@@ -1,0 +1,24 @@
+{
+  "name": "algorithmic-mta-framework",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker",
+        "innoverio.vscode-dbt-power-user"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt"
+}
