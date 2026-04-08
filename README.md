@@ -74,6 +74,14 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-1-batch-1-1-report.md](doc/batches/phase-1-batch-1-1-report.md)
 	- Command Log: [doc/batches/phase-1-batch-1-1-commands.md](doc/batches/phase-1-batch-1-1-commands.md)
 
+- **Batch 1.2 (Partitioned Bronze Landing)**
+	- Bronze Partition Strategy: [ingestion/contracts/bronze_partition_strategy.md](ingestion/contracts/bronze_partition_strategy.md)
+	- Bronze Landing Pipeline: [ingestion/pipeline/bronze_landing.py](ingestion/pipeline/bronze_landing.py)
+	- Sample Raw Input: [ingestion/samples/raw_nested_events.jsonl](ingestion/samples/raw_nested_events.jsonl)
+	- Bronze Validation Evidence: [doc/phase-1/batch-1-2-bronze-validation.md](doc/phase-1/batch-1-2-bronze-validation.md)
+	- Batch Report: [doc/batches/phase-1-batch-1-2-report.md](doc/batches/phase-1-batch-1-2-report.md)
+	- Command Log: [doc/batches/phase-1-batch-1-2-commands.md](doc/batches/phase-1-batch-1-2-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
