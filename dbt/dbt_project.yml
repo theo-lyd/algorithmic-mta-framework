@@ -1,0 +1,24 @@
+name: "algorithmic_mta_framework"
+version: "1.0.0"
+config-version: 2
+
+profile: "algorithmic_mta_framework"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  algorithmic_mta_framework:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
