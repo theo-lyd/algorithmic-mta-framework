@@ -14,6 +14,8 @@ Track all dbt and DuckDB related commands used in implementation and validation.
 ## Commands Used So Far
 - grep -E "duckdb|pandas|dbt-core|airflow" requirements.txt
 - python pyarrow schema inspection script for Bronze parquet verification (supports DuckDB/dbt-layer readiness)
+- dbt --version
+- /home/vscode/.local/bin/dbt --version
 
 ## No Direct CLI Yet
 - No direct dbt CLI execution is documented yet (for example: dbt run, dbt test).

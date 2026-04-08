@@ -1,0 +1,7 @@
+{
+    "dbt.dbtPath": "/home/vscode/.local/bin/dbt",
+    "dbt.queryLimit": 5000,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ]
+}

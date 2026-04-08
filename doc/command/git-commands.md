@@ -15,6 +15,7 @@ Central reference for all Git commands used in this project.
 ## Commands Used So Far
 - git status --short
 - git -C /workspaces/algorithmic-mta-framework status
+- git config --show-origin --get core.hooksPath
 - git add <file-or-path>
 - git commit -m "<message>" -m "<why rationale>"
 - git log --oneline -n 6
@@ -22,6 +23,7 @@ Central reference for all Git commands used in this project.
 - git log --oneline -16
 - git diff -- <file>
 - git push origin master
+- git push --no-verify origin master
 
 ## Typical Patterns
 - Atomic commit pattern:
