@@ -26,6 +26,25 @@ The repository is structured to support end-to-end analytics engineering and ML 
 - Implementation Plan: [doc/implementation-plan.md](doc/implementation-plan.md) — 8-phase execution roadmap with batch-level detail
 - Execution-Ready Master Backlog: [doc/execution-ready-master-backlog.md](doc/execution-ready-master-backlog.md) — 40 stories, 273 points, 10 sprints with role ownership
 
+### Operational Command References
+- Git Commands: [doc/command/git-commands.md](doc/command/git-commands.md)
+- Make Commands: [doc/command/make-commands.md](doc/command/make-commands.md)
+- Bash/Shell Commands: [doc/command/bash-shell-commands.md](doc/command/bash-shell-commands.md)
+- Lint Commands: [doc/command/lint-commands.md](doc/command/lint-commands.md)
+- dbt/DuckDB Commands: [doc/command/dbt-duckdb-commands.md](doc/command/dbt-duckdb-commands.md)
+- Python Commands: [doc/command/python-commands.md](doc/command/python-commands.md)
+- Docker Commands: [doc/command/docker-commands.md](doc/command/docker-commands.md)
+
+### Stakeholder and Thesis Docs
+- Beginner Tutorial: [doc/stakeholder/beginner-tutorial.md](doc/stakeholder/beginner-tutorial.md)
+- Thesis Defense: [doc/stakeholder/thesis-defense.md](doc/stakeholder/thesis-defense.md)
+- Standard MSc Thesis Report Companion: [doc/stakeholder/msc-thesis-report.md](doc/stakeholder/msc-thesis-report.md)
+- Project Presentation (Technical): [doc/stakeholder/project-presentation-technical.md](doc/stakeholder/project-presentation-technical.md)
+- Project Presentation (Non-Technical): [doc/stakeholder/project-presentation-non-technical.md](doc/stakeholder/project-presentation-non-technical.md)
+- Project Walkthrough: [doc/stakeholder/project-walkthrough.md](doc/stakeholder/project-walkthrough.md)
+- Project Runbook: [doc/stakeholder/project-runbook.md](doc/stakeholder/project-runbook.md)
+- Business-Only Centric Report: [doc/stakeholder/business-only-centric-report.md](doc/stakeholder/business-only-centric-report.md)
+
 ### Phase 0 Batch Artifacts
 - **Batch 0.1 (Architecture and Standards Baseline)**
 	- Architecture and Domains: [doc/phase-0/batch-0-1-architecture-standards.md](doc/phase-0/batch-0-1-architecture-standards.md)
