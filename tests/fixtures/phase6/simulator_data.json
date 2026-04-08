@@ -1,0 +1,37 @@
+{
+    "current_allocation": {
+        "display": 25000,
+        "search": 22000,
+        "social": 18000,
+        "email": 8000
+    },
+    "proposed_allocation": {
+        "display": 23000,
+        "search": 26000,
+        "social": 17000,
+        "email": 9000
+    },
+    "base_roas_by_channel": {
+        "display": 1.8,
+        "search": 3.2,
+        "social": 1.5,
+        "email": 2.8
+    },
+    "propensity_model_output": [
+        {
+            "segment": "high_value",
+            "baseline_conversion_rate": 0.04,
+            "predicted_conversion_rate": 0.048
+        },
+        {
+            "segment": "mid_value",
+            "baseline_conversion_rate": 0.02,
+            "predicted_conversion_rate": 0.025
+        },
+        {
+            "segment": "new_user",
+            "baseline_conversion_rate": 0.012,
+            "predicted_conversion_rate": 0.014
+        }
+    ]
+}

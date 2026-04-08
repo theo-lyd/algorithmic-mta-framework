@@ -1,0 +1,48 @@
+{
+    "channels": [
+        "display",
+        "search",
+        "social",
+        "email"
+    ],
+    "channels_with_metrics": [
+        {
+            "channel": "display",
+            "last_touch_credit": 10000,
+            "markov_credit": 12500,
+            "spend_eur": 25000,
+            "removal_effect_pct": 18,
+            "sessions": 5000,
+            "conversions": 150
+        },
+        {
+            "channel": "search",
+            "last_touch_credit": 18000,
+            "markov_credit": 16800,
+            "spend_eur": 22000,
+            "removal_effect_pct": 32,
+            "sessions": 8000,
+            "conversions": 320
+        },
+        {
+            "channel": "social",
+            "last_touch_credit": 8000,
+            "markov_credit": 10200,
+            "spend_eur": 18000,
+            "removal_effect_pct": 14,
+            "sessions": 3500,
+            "conversions": 70
+        },
+        {
+            "channel": "email",
+            "last_touch_credit": 14000,
+            "markov_credit": 10500,
+            "spend_eur": 8000,
+            "removal_effect_pct": 22,
+            "sessions": 2000,
+            "conversions": 100
+        }
+    ],
+    "current_budget_eur": 73000,
+    "monthly_budget_eur": 100000
+}
