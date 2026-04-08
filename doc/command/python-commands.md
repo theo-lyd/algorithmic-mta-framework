@@ -24,6 +24,7 @@ Track all Python commands used in project setup, validation, and ingestion pipel
 - PYTHONPATH=. python <inline gate summary script for replay validation>
 - PYTHONPATH=. python -m unittest discover -s tests/phase2 -p 'test_*.py'
 - PYTHONPATH=. python ingestion/pipeline/validate_text_normalization.py
+- PYTHONPATH=. python ingestion/pipeline/validate_financial_normalization.py
 
 ## Typical Patterns
 - Module validation:

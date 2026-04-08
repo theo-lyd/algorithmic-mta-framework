@@ -146,6 +146,16 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-2-batch-2-1-report.md](doc/batches/phase-2-batch-2-1-report.md)
 	- Command Log: [doc/batches/phase-2-batch-2-1-commands.md](doc/batches/phase-2-batch-2-1-commands.md)
 
+- **Batch 2.2 (Financial and Numeric Parsing)**
+	- Financial Normalization Library: [ingestion/pipeline/financial_normalization.py](ingestion/pipeline/financial_normalization.py)
+	- Financial Fixtures: [tests/fixtures/phase2/financial/financial_cases.json](tests/fixtures/phase2/financial/financial_cases.json)
+	- Unit Tests: [tests/phase2/test_financial_normalization.py](tests/phase2/test_financial_normalization.py)
+	- Validation Runner: [ingestion/pipeline/validate_financial_normalization.py](ingestion/pipeline/validate_financial_normalization.py)
+	- Currency Conversion Policy: [doc/phase-2/batch-2-2-currency-conversion-policy.md](doc/phase-2/batch-2-2-currency-conversion-policy.md)
+	- Validation Evidence: [doc/phase-2/batch-2-2-financial-normalization-validation.md](doc/phase-2/batch-2-2-financial-normalization-validation.md)
+	- Batch Report: [doc/batches/phase-2-batch-2-2-report.md](doc/batches/phase-2-batch-2-2-report.md)
+	- Command Log: [doc/batches/phase-2-batch-2-2-commands.md](doc/batches/phase-2-batch-2-2-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
