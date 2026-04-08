@@ -1,0 +1,10 @@
+{
+  "delayed_files": 1,
+  "delayed_ids": [
+    "partner_20260408_00.json"
+  ],
+  "impacted_partitions": [
+    "event_date=2026-04-08/source_channel=affiliate"
+  ],
+  "reconciliation_total_delta": 140
+}

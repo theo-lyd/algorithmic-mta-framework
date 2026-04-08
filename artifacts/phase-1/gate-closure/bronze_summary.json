@@ -1,0 +1,6 @@
+{
+  "row_count": 3,
+  "required_audit_columns_present": true,
+  "partition_columns_present": true,
+  "parquet_file_count": 2
+}
