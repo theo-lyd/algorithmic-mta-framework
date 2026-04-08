@@ -335,6 +335,36 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Gate Check Report: [doc/phase-6/phase-6-gate-check-report.md](doc/phase-6/phase-6-gate-check-report.md) — 3/3 gates passing (dashboards trusted, simulator functional, stakeholders ready)
 	- Command Log: [doc/batches/phase-6-commands.md](doc/batches/phase-6-commands.md) — 25+ commands with validation outputs
 
+### Phase 7 Batch Artifacts
+- **Batch 7.1 (Production Readiness)**
+	- Production Hardening Logic: [production/readiness.py](production/readiness.py)
+	- Fixture Data: [tests/fixtures/phase7/production_readiness.json](tests/fixtures/phase7/production_readiness.json)
+	- Unit Tests: [tests/phase7/test_batch_71_production_readiness.py](tests/phase7/test_batch_71_production_readiness.py)
+	- Validation Runner: [production/validate_batch_71.py](production/validate_batch_71.py)
+	- Validation Evidence: [artifacts/phase-7/batch-7-1/production_readiness_summary.json](artifacts/phase-7/batch-7-1/production_readiness_summary.json)
+	- Validation Report: [doc/batches/phase-7-batch-7-1-validation.md](doc/batches/phase-7-batch-7-1-validation.md)
+
+- **Batch 7.2 (Impact Measurement)**
+	- Impact Measurement Logic: [impact/impact_measurement.py](impact/impact_measurement.py)
+	- Fixture Data: [tests/fixtures/phase7/impact_measurement.json](tests/fixtures/phase7/impact_measurement.json)
+	- Unit Tests: [tests/phase7/test_batch_72_impact_measurement.py](tests/phase7/test_batch_72_impact_measurement.py)
+	- Validation Runner: [impact/validate_batch_72.py](impact/validate_batch_72.py)
+	- Validation Evidence: [artifacts/phase-7/batch-7-2/impact_measurement_summary.json](artifacts/phase-7/batch-7-2/impact_measurement_summary.json)
+	- Validation Report: [doc/batches/phase-7-batch-7-2-validation.md](doc/batches/phase-7-batch-7-2-validation.md)
+
+- **Batch 7.3 (Thesis and Board Narrative Package)**
+	- Thesis Packaging Logic: [thesis/narrative_package.py](thesis/narrative_package.py)
+	- Fixture Data: [tests/fixtures/phase7/thesis_package.json](tests/fixtures/phase7/thesis_package.json)
+	- Unit Tests: [tests/phase7/test_batch_73_thesis_package.py](tests/phase7/test_batch_73_thesis_package.py)
+	- Validation Runner: [thesis/validate_batch_73.py](thesis/validate_batch_73.py)
+	- Validation Evidence: [artifacts/phase-7/batch-7-3/thesis_package_summary.json](artifacts/phase-7/batch-7-3/thesis_package_summary.json)
+	- Validation Report: [doc/batches/phase-7-batch-7-3-validation.md](doc/batches/phase-7-batch-7-3-validation.md)
+
+- **Phase 7 Gate Check & Documentation**
+	- Gate Check Report: [doc/phase-7/phase-7-gate-check-report.md](doc/phase-7/phase-7-gate-check-report.md) — 3/3 gates passing (production sign-off, quantified value, thesis package readiness)
+	- Command Log: [doc/batches/phase-7-commands.md](doc/batches/phase-7-commands.md)
+	- Issues Register: [doc/issues/phase-7-issues.md](doc/issues/phase-7-issues.md)
+
 ## Quick Start
 
 1. Install dependencies:
