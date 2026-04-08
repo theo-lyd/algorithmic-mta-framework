@@ -1,0 +1,65 @@
+{
+  "compliance_check_timestamp": "2026-04-08T15:41:36.902990",
+  "phases_checked": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "all_phases_compliant": false,
+  "compliance_map": {
+    "0": {
+      "phase": "0",
+      "gate_d_approved": false,
+      "artifacts_present": false,
+      "validators_passing": false
+    },
+    "1": {
+      "phase": "1",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": false
+    },
+    "2": {
+      "phase": "2",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    },
+    "3": {
+      "phase": "3",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    },
+    "4": {
+      "phase": "4",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    },
+    "5": {
+      "phase": "5",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    },
+    "6": {
+      "phase": "6",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    },
+    "7": {
+      "phase": "7",
+      "gate_d_approved": false,
+      "artifacts_present": true,
+      "validators_passing": true
+    }
+  },
+  "overall_status": "REVIEW_REQUIRED"
+}

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Run Algorithmic MTA Framework
+Comment=Launch full end-to-end system validation pipeline
+Path=/workspaces/algorithmic-mta-framework
+Exec=/bin/bash -lc 'cd "/workspaces/algorithmic-mta-framework" && ./scripts/run_entire_system.sh --interactive'
+Terminal=true
+Icon=utilities-terminal
+Categories=Development;
+StartupNotify=true

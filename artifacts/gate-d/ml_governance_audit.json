@@ -1,0 +1,151 @@
+{
+  "audit_timestamp": "2026-04-08T15:41:36.810161",
+  "phase": "all",
+  "calibration_drift": {
+    "drift_detected": true,
+    "drift_magnitude": 0.2645,
+    "ece_current": 0.2016,
+    "ece_reference": 0.2741,
+    "threshold": 0.15,
+    "action": "RETRAIN_REQUIRED"
+  },
+  "feature_bias": {
+    "bias_detected": true,
+    "biased_features": [
+      {
+        "feature": "impression_count",
+        "ks_statistic": 0.368,
+        "severity": "MEDIUM"
+      }
+    ],
+    "max_ks_statistic": 0.368,
+    "threshold": 0.25,
+    "action": "INVESTIGATE"
+  },
+  "label_bias": {
+    "label_distribution_drift": false,
+    "current_positive_rate": 0.83,
+    "reference_positive_rate": 0.835,
+    "rate_difference": 0.005,
+    "group_disparities": [
+      {
+        "group": "desktop",
+        "positive_rate": 0.84,
+        "disparity": 0.01,
+        "severity": "LOW"
+      },
+      {
+        "group": "mobile",
+        "positive_rate": 0.82,
+        "disparity": 0.01,
+        "severity": "LOW"
+      }
+    ],
+    "fairness_alert": false,
+    "action": "PASS"
+  },
+  "retrain_trigger": {
+    "retrain_required": true,
+    "trigger_signals": [
+      {
+        "signal": "calibration_drift",
+        "magnitude": 0.2645,
+        "priority": "CRITICAL"
+      },
+      {
+        "signal": "feature_distribution_bias",
+        "features_affected": 1,
+        "priority": "HIGH"
+      }
+    ],
+    "priority_level": "CRITICAL",
+    "timestamp": "2026-04-08T15:41:36.810103",
+    "recommendation": "IMMEDIATE_RETRAIN"
+  },
+  "explainability_metrics": {
+    "explainability_score": 0.4,
+    "top_features": [
+      {
+        "feature": "spend",
+        "importance": 0.45
+      },
+      {
+        "feature": "impression_count",
+        "importance": 0.3
+      },
+      {
+        "feature": "click_rate",
+        "importance": 0.15
+      },
+      {
+        "feature": "historical_ctr",
+        "importance": 0.08
+      },
+      {
+        "feature": "device_type",
+        "importance": 0.02
+      }
+    ],
+    "features_for_80pct_coverage": 3,
+    "total_features": 5
+  },
+  "phase_7_impact": {
+    "batch": "7.2",
+    "name": "Impact Measurement",
+    "status": "passing",
+    "timestamp": "2026-04-08T15:41:36.220722Z",
+    "summary": {
+      "batch": "7.2",
+      "name": "Impact Measurement",
+      "experiment_design": {
+        "hypothesis": "Reallocation improves ROAS and reduces waste.",
+        "null_hypothesis": "No improvement in ROAS and waste after reallocation.",
+        "pre_days": 30,
+        "post_days": 30,
+        "min_observations_required": 28,
+        "guardrails": {
+          "spend_stability_max_delta_pct": 20.0,
+          "tracking_integrity_required": true,
+          "channel_coverage_required": true
+        },
+        "design_valid": true
+      },
+      "impact_delta": {
+        "pre_roas": 3.0980997038499507,
+        "post_roas": 3.3673494570582427,
+        "roas_uplift_pct": 8.690803361612295,
+        "pre_waste_rate_pct": 8.299296643632774,
+        "post_waste_rate_pct": 6.637771470878579,
+        "waste_reduction_pct": 20.020072110916995
+      },
+      "confidence": {
+        "daily_roas_mean_pre": 3.098086344698249,
+        "daily_roas_mean_post": 3.367321263698334,
+        "daily_roas_delta": 0.2692349190000849,
+        "daily_roas_delta_ci_95": [
+          0.2661962641060656,
+          0.27227357389410417
+        ],
+        "z_score": 173.66251175110256,
+        "p_value_two_tailed": 0.0,
+        "statistically_significant_at_95": true,
+        "sensitivity_uplift_range_pct": [
+          -7.309637981496989,
+          24.69036201850301
+        ],
+        "assumptions": {
+          "attribution_error_pct": 9.0,
+          "elasticity_error_pct": 7.0,
+          "seasonality_residual_pct": 5.0
+        }
+      },
+      "business_value_quantified": true
+    },
+    "exit_criteria": {
+      "business_value_quantified": true,
+      "roas_uplift_positive": true,
+      "waste_reduction_positive": true,
+      "statistically_significant": true
+    }
+  }
+}
