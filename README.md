@@ -136,6 +136,16 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Closure Batch Report: [doc/batches/phase-1-batch-1-5-closure-report.md](doc/batches/phase-1-batch-1-5-closure-report.md)
 	- Closure Command Log: [doc/batches/phase-1-batch-1-5-commands.md](doc/batches/phase-1-batch-1-5-commands.md)
 
+### Phase 2 Batch Artifacts
+- **Batch 2.1 (Encoding and Locale Normalization)**
+	- Normalization Library: [ingestion/pipeline/text_normalization.py](ingestion/pipeline/text_normalization.py)
+	- Test Fixtures: [tests/fixtures/phase2/text_cleaning_fixtures.json](tests/fixtures/phase2/text_cleaning_fixtures.json)
+	- Unit Tests: [tests/phase2/test_text_cleaning.py](tests/phase2/test_text_cleaning.py)
+	- Validation Runner: [ingestion/pipeline/validate_text_normalization.py](ingestion/pipeline/validate_text_normalization.py)
+	- Validation Evidence: [doc/phase-2/batch-2-1-locale-normalization-validation.md](doc/phase-2/batch-2-1-locale-normalization-validation.md)
+	- Batch Report: [doc/batches/phase-2-batch-2-1-report.md](doc/batches/phase-2-batch-2-1-report.md)
+	- Command Log: [doc/batches/phase-2-batch-2-1-commands.md](doc/batches/phase-2-batch-2-1-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:

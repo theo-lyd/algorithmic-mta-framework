@@ -22,6 +22,8 @@ Track all Python commands used in project setup, validation, and ingestion pipel
 - python ingestion/pipeline/bronze_landing.py --input ingestion/samples/raw_nested_events.jsonl --output artifacts/phase-1/gate-closure/bronze_output --batch-id phase1_gate_20260408 > artifacts/phase-1/gate-closure/bronze_run.txt
 - PYTHONPATH=. python <inline gate summary script for bronze schema/partitions>
 - PYTHONPATH=. python <inline gate summary script for replay validation>
+- PYTHONPATH=. python -m unittest discover -s tests/phase2 -p 'test_*.py'
+- PYTHONPATH=. python ingestion/pipeline/validate_text_normalization.py
 
 ## Typical Patterns
 - Module validation:
