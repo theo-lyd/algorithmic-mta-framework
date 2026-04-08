@@ -1,0 +1,121 @@
+﻿Issue Type,Issue Key,Summary,Description,Epic Link,Labels,Sprint,Story Points,Assignee,Custom Fields
+Story,MTA-001,[DE] Dev container and service orchestration baseline,"Primary: DE | Support: AE
+
+Acceptance Criteria: One-command startup for core stack works on clean environment",MTA-EPIC-1,"DE,AE,mta-backlog,foundation,s1",S1,5,,Primary Owner: DE; Support: AE
+Story,MTA-002,"[DE] Secrets, env strategy, role-based access matrix","Primary: DE | Support: AE
+
+Acceptance Criteria: Secrets not hardcoded, access matrix approved",MTA-EPIC-1,"DE,AE,mta-backlog,foundation,s1",S1,3,,Primary Owner: DE; Support: AE
+Story,MTA-003,"[AE] Naming conventions, layer standards, modeling contract","Primary: AE | Support: DE
+
+Acceptance Criteria: Standards approved and used by first pipelines",MTA-EPIC-1,"AE,DE,mta-backlog,foundation,s1",S1,3,,Primary Owner: AE; Support: DE
+Story,MTA-004,[AE] SLA/SLO definitions and incident severity policy,"Primary: AE | Support: DE
+
+Acceptance Criteria: Freshness, completeness, and error SLOs agreed",MTA-EPIC-1,"AE,DE,mta-backlog,foundation,s1",S1,3,,Primary Owner: AE; Support: DE
+Story,MTA-005,[DE] GA4 connector setup with incremental cursor logic,"Primary: DE | Support: AE
+
+Acceptance Criteria: Incremental sync stable across three runs",MTA-EPIC-2,"DE,AE,mta-backlog,ingestion,s1",S1,8,,Primary Owner: DE; Support: AE
+Story,MTA-006,[DE] Raw JSON landing and partitioned parquet writer,"Primary: DE | Support: AE
+
+Acceptance Criteria: Bronze partition output generated and queryable",MTA-EPIC-2,"DE,AE,mta-backlog,ingestion,s1",S1,8,,Primary Owner: DE; Support: AE
+Story,MTA-007,[DE] Ingestion audit columns and idempotency keys,"Primary: DE | Support: AE
+
+Acceptance Criteria: No duplicate loads on replay",MTA-EPIC-2,"DE,AE,mta-backlog,ingestion,s2",S2,5,,Primary Owner: DE; Support: AE
+Story,MTA-008,[DE] Airflow DAG base and schedule orchestration,"Primary: DE | Support: AE
+
+Acceptance Criteria: DAG succeeds end-to-end on sample day",MTA-EPIC-2,"DE,AE,mta-backlog,ingestion,s2",S2,5,,Primary Owner: DE; Support: AE
+Story,MTA-009,[DE] Late-arriving data sensor and partition replay logic,"Primary: DE | Support: AE
+
+Acceptance Criteria: Delayed feed triggers selective reprocessing only",MTA-EPIC-2,"DE,AE,mta-backlog,ingestion,s2",S2,8,,Primary Owner: DE; Support: AE
+Story,MTA-010,[AE] Reconciliation check expected vs arrived event volumes,"Primary: AE | Support: DE
+
+Acceptance Criteria: Alert generated on threshold breach",MTA-EPIC-2,"AE,DE,mta-backlog,ingestion,s2",S2,5,,Primary Owner: AE; Support: DE
+Story,MTA-011,[AE] Encoding detection and UTF normalization pipeline,"Primary: AE | Support: DE
+
+Acceptance Criteria: Known bad encodings corrected in fixtures",MTA-EPIC-3,"AE,DE,mta-backlog,cleaning,s3",S3,5,,Primary Owner: AE; Support: DE
+Story,MTA-012,[AE] German string normalization and transliteration rules,"Primary: AE | Support: DE
+
+Acceptance Criteria: Umlaut handling validated by tests",MTA-EPIC-3,"AE,DE,mta-backlog,cleaning,s3",S3,5,,Primary Owner: AE; Support: DE
+Story,MTA-013,[AE] Locale-aware financial parsing and abbreviation expansion,"Primary: AE | Support: DE
+
+Acceptance Criteria: Inputs like 10 Mio converted correctly",MTA-EPIC-3,"AE,DE,mta-backlog,cleaning,s3",S3,8,,Primary Owner: AE; Support: DE
+Story,MTA-014,[AE] Nested GA4 flattening to canonical silver schema,"Primary: AE | Support: DE
+
+Acceptance Criteria: Silver tables populated with expected row counts",MTA-EPIC-3,"AE,DE,mta-backlog,cleaning,s3",S3,8,,Primary Owner: AE; Support: DE
+Story,MTA-015,[AE] Sessionization with 30-minute inactivity rule,"Primary: AE | Support: DE
+
+Acceptance Criteria: Deterministic boundary tests pass",MTA-EPIC-4,"AE,DE,mta-backlog,core-modeling,s4",S4,8,,Primary Owner: AE; Support: DE
+Story,MTA-016,[AE] 30-day conversion lookback enforcement,"Primary: AE | Support: DE
+
+Acceptance Criteria: Out-of-window touches excluded",MTA-EPIC-4,"AE,DE,mta-backlog,core-modeling,s4",S4,5,,Primary Owner: AE; Support: DE
+Story,MTA-017,[AE] Campaign dimension SCD Type 2 implementation,"Primary: AE | Support: DE
+
+Acceptance Criteria: Point-in-time joins reproduce prior state",MTA-EPIC-4,"AE,DE,mta-backlog,core-modeling,s4",S4,8,,Primary Owner: AE; Support: DE
+Story,MTA-018,[AE] Customer hash harmonization and identity rules,"Primary: AE | Support: DE
+
+Acceptance Criteria: CRM-web linkage quality above threshold",MTA-EPIC-4,"AE,DE,mta-backlog,core-modeling,s4",S4,8,,Primary Owner: AE; Support: DE
+Story,MTA-019,[AE] Journey path builder using recursive and window logic,"Primary: AE | Support: DE
+
+Acceptance Criteria: Benchmark user paths are accurate",MTA-EPIC-4,"AE,DE,mta-backlog,core-modeling,s5",S5,8,,Primary Owner: AE; Support: DE
+Story,MTA-020,"[AE] Gold marts for spend, net conversions, and ROAS","Primary: AE | Support: BI
+
+Acceptance Criteria: Finance reconciliation passes",MTA-EPIC-4,"AE,BI,mta-backlog,core-modeling,s5",S5,8,,Primary Owner: AE; Support: BI
+Story,MTA-021,[AE] GE suite for schema and integrity contracts,"Primary: AE | Support: DE
+
+Acceptance Criteria: Tests fail correctly on injected bad data",MTA-EPIC-5,"AE,DE,mta-backlog,quality,s5",S5,8,,Primary Owner: AE; Support: DE
+Story,MTA-022,[AE] Attribution conservation test (no ghost revenue),"Primary: AE | Support: MLE
+
+Acceptance Criteria: Attributed totals equal actual totals",MTA-EPIC-5,"AE,MLE,mta-backlog,quality,s5",S5,5,,Primary Owner: AE; Support: MLE
+Story,MTA-023,"[MLE] Baselines: first, last, linear, and time-decay","Primary: MLE | Support: AE
+
+Acceptance Criteria: Baseline outputs published and comparable",MTA-EPIC-6,"MLE,AE,mta-backlog,attribution,s6",S6,8,,Primary Owner: MLE; Support: AE
+Story,MTA-024,[MLE] Markov transition matrix and removal effect engine,"Primary: MLE | Support: AE
+
+Acceptance Criteria: Stable channel removal scores",MTA-EPIC-6,"MLE,AE,mta-backlog,attribution,s6",S6,13,,Primary Owner: MLE; Support: AE
+Story,MTA-025,[MLE] Normalization and attributed revenue allocation,"Primary: MLE | Support: AE
+
+Acceptance Criteria: Revenue by channel reconciles to net total",MTA-EPIC-6,"MLE,AE,mta-backlog,attribution,s6",S6,8,,Primary Owner: MLE; Support: AE
+Story,MTA-026,[MLE] Feature store for next-7-day propensity model,"Primary: MLE | Support: AE
+
+Acceptance Criteria: Versioned feature sets generated daily",MTA-EPIC-7,"MLE,AE,mta-backlog,ml,s7",S7,8,,Primary Owner: MLE; Support: AE
+Story,MTA-027,[MLE] Logistic regression training and calibration,"Primary: MLE | Support: AE
+
+Acceptance Criteria: AUC and calibration meet thresholds",MTA-EPIC-7,"MLE,AE,mta-backlog,ml,s7",S7,8,,Primary Owner: MLE; Support: AE
+Story,MTA-028,[MLE] Drift monitoring and retraining trigger policy,"Primary: MLE | Support: DE
+
+Acceptance Criteria: Drift alerts fire on synthetic shift",MTA-EPIC-7,"MLE,DE,mta-backlog,ml,s7",S7,5,,Primary Owner: MLE; Support: DE
+Story,MTA-029,[MLE] User segmentation with K-means and labeling,"Primary: MLE | Support: BI
+
+Acceptance Criteria: Segments stable and interpretable",MTA-EPIC-7,"MLE,BI,mta-backlog,ml,s8",S8,8,,Primary Owner: MLE; Support: BI
+Story,MTA-030,"[DE] Monte Carlo freshness, volume, schema monitors","Primary: DE | Support: AE
+
+Acceptance Criteria: Alerts route with severity metadata",MTA-EPIC-8,"DE,AE,mta-backlog,observability,s8",S8,8,,Primary Owner: DE; Support: AE
+Story,MTA-031,[DE] Pixel downtime detector under active spend,"Primary: DE | Support: BI
+
+Acceptance Criteria: Incident triggers when views collapse",MTA-EPIC-8,"DE,BI,mta-backlog,observability,s8",S8,5,,Primary Owner: DE; Support: BI
+Story,MTA-032,[DE] PR pipeline for dbt tests and GE checkpoints,"Primary: DE | Support: AE
+
+Acceptance Criteria: Failed checks block merge",MTA-EPIC-9,"DE,AE,mta-backlog,ci/cd,s8",S8,8,,Primary Owner: DE; Support: AE
+Story,MTA-033,[BI] Metabase Attribution War dashboard,"Primary: BI | Support: AE
+
+Acceptance Criteria: Last-touch vs Markov deltas validated",MTA-EPIC-10,"BI,AE,mta-backlog,bi,s9",S9,8,,Primary Owner: BI; Support: AE
+Story,MTA-034,[BI] Channel waste report and efficiency heatmap,"Primary: BI | Support: AE
+
+Acceptance Criteria: High-cost low-impact channels highlighted",MTA-EPIC-10,"BI,AE,mta-backlog,bi,s9",S9,5,,Primary Owner: BI; Support: AE
+Story,MTA-035,[BI] Streamlit budget what-if simulator,"Primary: BI | Support: MLE
+
+Acceptance Criteria: Scenario output aligned with model assumptions",MTA-EPIC-11,"BI,MLE,mta-backlog,bi/ml,s9",S9,13,,Primary Owner: BI; Support: MLE
+Story,MTA-036,[BI] KPI glossary and board-facing metric definitions,"Primary: BI | Support: AE
+
+Acceptance Criteria: Executive sign-off on metric definitions",MTA-EPIC-12,"BI,AE,mta-backlog,adoption,s10",S10,5,,Primary Owner: BI; Support: AE
+Story,MTA-037,"[DE] Backfill, replay, and disaster recovery drill","Primary: DE | Support: AE
+
+Acceptance Criteria: Recovery runbook proven in timed test",MTA-EPIC-13,"DE,AE,mta-backlog,hardening,s10",S10,8,,Primary Owner: DE; Support: AE
+Story,MTA-038,[BI] End-to-end UAT with Marketing and Finance,"Primary: BI | Support: AE
+
+Acceptance Criteria: Critical defects closed",MTA-EPIC-14,"BI,AE,mta-backlog,validation,s10",S10,5,,Primary Owner: BI; Support: AE
+Story,MTA-039,[MLE] Pre/post budget reallocation experiment framework,"Primary: MLE | Support: BI
+
+Acceptance Criteria: Uplift measurement approach approved",MTA-EPIC-15,"MLE,BI,mta-backlog,impact,s10",S10,8,,Primary Owner: MLE; Support: BI
+Story,MTA-040,[AE] Thesis evidence pack and reproducibility appendix,"Primary: AE | Support: BI
+
+Acceptance Criteria: Final package complete",MTA-EPIC-16,"AE,BI,mta-backlog,closeout,s10",S10,5,,Primary Owner: AE; Support: BI
