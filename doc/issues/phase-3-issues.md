@@ -36,6 +36,20 @@ Record issues encountered in Phase 3 and how they were resolved.
 - Lesson learned:
 	- Conservative unresolved-queue routing is safer than optimistic merge logic for identity integrity.
 
+## Issue 3.3 - Duplicate touchpoints and stale attribution windows can distort journey paths
+- What issue was encountered:
+	- Repeated instrumentation events and old touchpoints can produce misleading journey sequences and conversion attribution.
+- Cause:
+	- Event streams often contain duplicate records, while attribution windows can accidentally span too far back in time.
+- Solution applied:
+	- Added deterministic touchpoint deduplication, journey sequencing, and a 30-day lookback boundary for conversion attribution.
+- How solution was implemented:
+	- Implemented `journey_pathing.py`, journey fixtures, replay tests, and a validation summary artifact.
+- How to avoid in future:
+	- Treat deduplication and attribution windows as explicit acceptance criteria for all journey-level models.
+- Lesson learned:
+	- Journey integrity depends on suppressing noisy repeats and enforcing bounded lookback logic.
+
 ## Issue Template
 - What issue was encountered:
 - Cause:

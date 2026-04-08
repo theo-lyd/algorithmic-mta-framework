@@ -203,6 +203,15 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-3-batch-3-2-report.md](doc/batches/phase-3-batch-3-2-report.md)
 	- Command Log: [doc/batches/phase-3-batch-3-2-commands.md](doc/batches/phase-3-batch-3-2-commands.md)
 
+- **Batch 3.3 (Journey Construction and Pathing Logic)**
+	- Journey Pathing Logic: [ingestion/pipeline/journey_pathing.py](ingestion/pipeline/journey_pathing.py)
+	- Journey Fixture Data: [tests/fixtures/phase3/journeys/journey_events.json](tests/fixtures/phase3/journeys/journey_events.json)
+	- Unit Tests: [tests/phase3/test_journey_pathing.py](tests/phase3/test_journey_pathing.py)
+	- Validation Runner: [ingestion/pipeline/validate_journey_pathing.py](ingestion/pipeline/validate_journey_pathing.py)
+	- Validation Evidence: [doc/phase-3/batch-3-3-journey-validation.md](doc/phase-3/batch-3-3-journey-validation.md)
+	- Batch Report: [doc/batches/phase-3-batch-3-3-report.md](doc/batches/phase-3-batch-3-3-report.md)
+	- Command Log: [doc/batches/phase-3-batch-3-3-commands.md](doc/batches/phase-3-batch-3-3-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
