@@ -1,0 +1,53 @@
+{
+  "batch": "7.1",
+  "name": "Production Readiness",
+  "status": "passing",
+  "timestamp": "2026-04-08T14:11:22.675411Z",
+  "summary": {
+    "batch": "7.1",
+    "name": "Production Readiness",
+    "disaster_recovery": {
+      "replay_batches": 3,
+      "deterministic_batches": 3,
+      "determinism_rate_pct": 100.0,
+      "avg_rto_minutes": 29.333333333333332,
+      "avg_rpo_minutes": 9.666666666666666,
+      "max_rto_minutes": 32.0,
+      "max_rpo_minutes": 11.0,
+      "all_checks_passed": true,
+      "violations": []
+    },
+    "backfill_stress": {
+      "windows_tested": 4,
+      "avg_runtime_minutes": 101.25,
+      "max_runtime_minutes": 109.0,
+      "avg_throughput_rows_per_second": 1712.1300261207932,
+      "min_throughput_rows_per_second": 1682.8478964401295,
+      "all_checks_passed": true,
+      "violations": []
+    },
+    "security_access": {
+      "users_audited": 4,
+      "prod_access_users": 3,
+      "mfa_compliance_pct": 100.0,
+      "all_checks_passed": true,
+      "violations": []
+    },
+    "required_prod_permissions": [
+      "read_metrics",
+      "trigger_replay",
+      "view_logs"
+    ],
+    "restricted_permissions": [
+      "drop_production_tables",
+      "write_raw_pii"
+    ],
+    "production_signoff_complete": true
+  },
+  "exit_criteria": {
+    "production_signoff_complete": true,
+    "dr_replay_passed": true,
+    "backfill_stress_passed": true,
+    "security_access_signoff": true
+  }
+}

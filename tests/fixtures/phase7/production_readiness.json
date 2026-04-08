@@ -1,0 +1,112 @@
+{
+    "expected_checksum_by_batch": {
+        "2026-01": "a1f92dcf0b3f32d8",
+        "2026-02": "e20b7a181a476a93",
+        "2026-03": "91bf2258f64ae0ca"
+    },
+    "replay_runs": [
+        {
+            "batch_id": "2026-01",
+            "expected_event_count": 850000,
+            "replay_event_count": 850000,
+            "expected_checksum": "a1f92dcf0b3f32d8",
+            "replay_checksum": "a1f92dcf0b3f32d8",
+            "failover_start_ts": "2026-04-01T01:00:00",
+            "service_restored_ts": "2026-04-01T01:32:00",
+            "last_durable_commit_ts": "2026-04-01T00:52:00"
+        },
+        {
+            "batch_id": "2026-02",
+            "expected_event_count": 910000,
+            "replay_event_count": 910000,
+            "expected_checksum": "e20b7a181a476a93",
+            "replay_checksum": "e20b7a181a476a93",
+            "failover_start_ts": "2026-04-02T01:00:00",
+            "service_restored_ts": "2026-04-02T01:29:00",
+            "last_durable_commit_ts": "2026-04-02T00:50:00"
+        },
+        {
+            "batch_id": "2026-03",
+            "expected_event_count": 945000,
+            "replay_event_count": 945000,
+            "expected_checksum": "91bf2258f64ae0ca",
+            "replay_checksum": "91bf2258f64ae0ca",
+            "failover_start_ts": "2026-04-03T01:00:00",
+            "service_restored_ts": "2026-04-03T01:27:00",
+            "last_durable_commit_ts": "2026-04-03T00:49:00"
+        }
+    ],
+    "backfill_windows": [
+        {
+            "window_label": "2024-Q1",
+            "runtime_minutes": 95,
+            "rows_processed": 9800000,
+            "error_rate_pct": 0.12
+        },
+        {
+            "window_label": "2024-Q2",
+            "runtime_minutes": 98,
+            "rows_processed": 10150000,
+            "error_rate_pct": 0.15
+        },
+        {
+            "window_label": "2024-Q3",
+            "runtime_minutes": 103,
+            "rows_processed": 10400000,
+            "error_rate_pct": 0.2
+        },
+        {
+            "window_label": "2024-Q4",
+            "runtime_minutes": 109,
+            "rows_processed": 11250000,
+            "error_rate_pct": 0.18
+        }
+    ],
+    "users": [
+        {
+            "user_id": "cmo.1",
+            "role": "cmo",
+            "mfa_enabled": true,
+            "prod_access": true
+        },
+        {
+            "user_id": "finance.controller.1",
+            "role": "finance_controller",
+            "mfa_enabled": true,
+            "prod_access": true
+        },
+        {
+            "user_id": "analytics.lead.1",
+            "role": "analytics_lead",
+            "mfa_enabled": true,
+            "prod_access": true
+        },
+        {
+            "user_id": "growth.manager.1",
+            "role": "growth_manager",
+            "mfa_enabled": true,
+            "prod_access": false
+        }
+    ],
+    "role_permissions": {
+        "cmo": [
+            "read_metrics",
+            "trigger_replay",
+            "view_logs"
+        ],
+        "finance_controller": [
+            "read_metrics",
+            "trigger_replay",
+            "view_logs"
+        ],
+        "analytics_lead": [
+            "read_metrics",
+            "trigger_replay",
+            "view_logs"
+        ],
+        "growth_manager": [
+            "read_metrics",
+            "view_logs"
+        ]
+    }
+}

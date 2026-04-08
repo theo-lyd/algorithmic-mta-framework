@@ -1,0 +1,371 @@
+{
+    "pre_period": [
+        {
+            "date": "2026-01-01",
+            "spend_eur": 10500,
+            "revenue_eur": 32800,
+            "waste_eur": 890
+        },
+        {
+            "date": "2026-01-02",
+            "spend_eur": 11000,
+            "revenue_eur": 34200,
+            "waste_eur": 910
+        },
+        {
+            "date": "2026-01-03",
+            "spend_eur": 10200,
+            "revenue_eur": 31550,
+            "waste_eur": 860
+        },
+        {
+            "date": "2026-01-04",
+            "spend_eur": 10800,
+            "revenue_eur": 33420,
+            "waste_eur": 880
+        },
+        {
+            "date": "2026-01-05",
+            "spend_eur": 10750,
+            "revenue_eur": 33210,
+            "waste_eur": 875
+        },
+        {
+            "date": "2026-01-06",
+            "spend_eur": 10920,
+            "revenue_eur": 33780,
+            "waste_eur": 905
+        },
+        {
+            "date": "2026-01-07",
+            "spend_eur": 10680,
+            "revenue_eur": 33010,
+            "waste_eur": 870
+        },
+        {
+            "date": "2026-01-08",
+            "spend_eur": 10420,
+            "revenue_eur": 32300,
+            "waste_eur": 860
+        },
+        {
+            "date": "2026-01-09",
+            "spend_eur": 11200,
+            "revenue_eur": 34780,
+            "waste_eur": 940
+        },
+        {
+            "date": "2026-01-10",
+            "spend_eur": 11350,
+            "revenue_eur": 35120,
+            "waste_eur": 955
+        },
+        {
+            "date": "2026-01-11",
+            "spend_eur": 11100,
+            "revenue_eur": 34520,
+            "waste_eur": 925
+        },
+        {
+            "date": "2026-01-12",
+            "spend_eur": 10980,
+            "revenue_eur": 34010,
+            "waste_eur": 910
+        },
+        {
+            "date": "2026-01-13",
+            "spend_eur": 10850,
+            "revenue_eur": 33600,
+            "waste_eur": 900
+        },
+        {
+            "date": "2026-01-14",
+            "spend_eur": 10640,
+            "revenue_eur": 32940,
+            "waste_eur": 885
+        },
+        {
+            "date": "2026-01-15",
+            "spend_eur": 10530,
+            "revenue_eur": 32610,
+            "waste_eur": 872
+        },
+        {
+            "date": "2026-01-16",
+            "spend_eur": 10480,
+            "revenue_eur": 32430,
+            "waste_eur": 868
+        },
+        {
+            "date": "2026-01-17",
+            "spend_eur": 10770,
+            "revenue_eur": 33320,
+            "waste_eur": 892
+        },
+        {
+            "date": "2026-01-18",
+            "spend_eur": 10890,
+            "revenue_eur": 33690,
+            "waste_eur": 905
+        },
+        {
+            "date": "2026-01-19",
+            "spend_eur": 11030,
+            "revenue_eur": 34150,
+            "waste_eur": 918
+        },
+        {
+            "date": "2026-01-20",
+            "spend_eur": 10940,
+            "revenue_eur": 33880,
+            "waste_eur": 910
+        },
+        {
+            "date": "2026-01-21",
+            "spend_eur": 10720,
+            "revenue_eur": 33180,
+            "waste_eur": 890
+        },
+        {
+            "date": "2026-01-22",
+            "spend_eur": 10660,
+            "revenue_eur": 33010,
+            "waste_eur": 884
+        },
+        {
+            "date": "2026-01-23",
+            "spend_eur": 10810,
+            "revenue_eur": 33450,
+            "waste_eur": 898
+        },
+        {
+            "date": "2026-01-24",
+            "spend_eur": 10910,
+            "revenue_eur": 33820,
+            "waste_eur": 907
+        },
+        {
+            "date": "2026-01-25",
+            "spend_eur": 11120,
+            "revenue_eur": 34490,
+            "waste_eur": 926
+        },
+        {
+            "date": "2026-01-26",
+            "spend_eur": 11040,
+            "revenue_eur": 34210,
+            "waste_eur": 918
+        },
+        {
+            "date": "2026-01-27",
+            "spend_eur": 10870,
+            "revenue_eur": 33670,
+            "waste_eur": 901
+        },
+        {
+            "date": "2026-01-28",
+            "spend_eur": 10790,
+            "revenue_eur": 33410,
+            "waste_eur": 895
+        },
+        {
+            "date": "2026-01-29",
+            "spend_eur": 10630,
+            "revenue_eur": 32930,
+            "waste_eur": 880
+        },
+        {
+            "date": "2026-01-30",
+            "spend_eur": 10580,
+            "revenue_eur": 32790,
+            "waste_eur": 874
+        }
+    ],
+    "post_period": [
+        {
+            "date": "2026-03-01",
+            "spend_eur": 10500,
+            "revenue_eur": 35500,
+            "waste_eur": 710
+        },
+        {
+            "date": "2026-03-02",
+            "spend_eur": 11000,
+            "revenue_eur": 37100,
+            "waste_eur": 728
+        },
+        {
+            "date": "2026-03-03",
+            "spend_eur": 10200,
+            "revenue_eur": 34320,
+            "waste_eur": 692
+        },
+        {
+            "date": "2026-03-04",
+            "spend_eur": 10800,
+            "revenue_eur": 36290,
+            "waste_eur": 715
+        },
+        {
+            "date": "2026-03-05",
+            "spend_eur": 10750,
+            "revenue_eur": 36120,
+            "waste_eur": 710
+        },
+        {
+            "date": "2026-03-06",
+            "spend_eur": 10920,
+            "revenue_eur": 36720,
+            "waste_eur": 724
+        },
+        {
+            "date": "2026-03-07",
+            "spend_eur": 10680,
+            "revenue_eur": 35920,
+            "waste_eur": 708
+        },
+        {
+            "date": "2026-03-08",
+            "spend_eur": 10420,
+            "revenue_eur": 35030,
+            "waste_eur": 694
+        },
+        {
+            "date": "2026-03-09",
+            "spend_eur": 11200,
+            "revenue_eur": 37780,
+            "waste_eur": 740
+        },
+        {
+            "date": "2026-03-10",
+            "spend_eur": 11350,
+            "revenue_eur": 38190,
+            "waste_eur": 752
+        },
+        {
+            "date": "2026-03-11",
+            "spend_eur": 11100,
+            "revenue_eur": 37500,
+            "waste_eur": 736
+        },
+        {
+            "date": "2026-03-12",
+            "spend_eur": 10980,
+            "revenue_eur": 36980,
+            "waste_eur": 730
+        },
+        {
+            "date": "2026-03-13",
+            "spend_eur": 10850,
+            "revenue_eur": 36590,
+            "waste_eur": 721
+        },
+        {
+            "date": "2026-03-14",
+            "spend_eur": 10640,
+            "revenue_eur": 35850,
+            "waste_eur": 703
+        },
+        {
+            "date": "2026-03-15",
+            "spend_eur": 10530,
+            "revenue_eur": 35460,
+            "waste_eur": 698
+        },
+        {
+            "date": "2026-03-16",
+            "spend_eur": 10480,
+            "revenue_eur": 35290,
+            "waste_eur": 692
+        },
+        {
+            "date": "2026-03-17",
+            "spend_eur": 10770,
+            "revenue_eur": 36320,
+            "waste_eur": 714
+        },
+        {
+            "date": "2026-03-18",
+            "spend_eur": 10890,
+            "revenue_eur": 36690,
+            "waste_eur": 720
+        },
+        {
+            "date": "2026-03-19",
+            "spend_eur": 11030,
+            "revenue_eur": 37180,
+            "waste_eur": 731
+        },
+        {
+            "date": "2026-03-20",
+            "spend_eur": 10940,
+            "revenue_eur": 36910,
+            "waste_eur": 726
+        },
+        {
+            "date": "2026-03-21",
+            "spend_eur": 10720,
+            "revenue_eur": 36040,
+            "waste_eur": 709
+        },
+        {
+            "date": "2026-03-22",
+            "spend_eur": 10660,
+            "revenue_eur": 35850,
+            "waste_eur": 706
+        },
+        {
+            "date": "2026-03-23",
+            "spend_eur": 10810,
+            "revenue_eur": 36290,
+            "waste_eur": 717
+        },
+        {
+            "date": "2026-03-24",
+            "spend_eur": 10910,
+            "revenue_eur": 36710,
+            "waste_eur": 724
+        },
+        {
+            "date": "2026-03-25",
+            "spend_eur": 11120,
+            "revenue_eur": 37480,
+            "waste_eur": 742
+        },
+        {
+            "date": "2026-03-26",
+            "spend_eur": 11040,
+            "revenue_eur": 37190,
+            "waste_eur": 736
+        },
+        {
+            "date": "2026-03-27",
+            "spend_eur": 10870,
+            "revenue_eur": 36570,
+            "waste_eur": 721
+        },
+        {
+            "date": "2026-03-28",
+            "spend_eur": 10790,
+            "revenue_eur": 36290,
+            "waste_eur": 714
+        },
+        {
+            "date": "2026-03-29",
+            "spend_eur": 10630,
+            "revenue_eur": 35790,
+            "waste_eur": 704
+        },
+        {
+            "date": "2026-03-30",
+            "spend_eur": 10580,
+            "revenue_eur": 35610,
+            "waste_eur": 700
+        }
+    ],
+    "assumptions": {
+        "attribution_error_pct": 9.0,
+        "elasticity_error_pct": 7.0,
+        "seasonality_residual_pct": 5.0
+    }
+}

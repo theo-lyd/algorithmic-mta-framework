@@ -1,0 +1,59 @@
+{
+  "batch": "7.2",
+  "name": "Impact Measurement",
+  "status": "passing",
+  "timestamp": "2026-04-08T14:11:23.118018Z",
+  "summary": {
+    "batch": "7.2",
+    "name": "Impact Measurement",
+    "experiment_design": {
+      "hypothesis": "Reallocation improves ROAS and reduces waste.",
+      "null_hypothesis": "No improvement in ROAS and waste after reallocation.",
+      "pre_days": 30,
+      "post_days": 30,
+      "min_observations_required": 28,
+      "guardrails": {
+        "spend_stability_max_delta_pct": 20.0,
+        "tracking_integrity_required": true,
+        "channel_coverage_required": true
+      },
+      "design_valid": true
+    },
+    "impact_delta": {
+      "pre_roas": 3.0980997038499507,
+      "post_roas": 3.3673494570582427,
+      "roas_uplift_pct": 8.690803361612295,
+      "pre_waste_rate_pct": 8.299296643632774,
+      "post_waste_rate_pct": 6.637771470878579,
+      "waste_reduction_pct": 20.020072110916995
+    },
+    "confidence": {
+      "daily_roas_mean_pre": 3.098086344698249,
+      "daily_roas_mean_post": 3.367321263698334,
+      "daily_roas_delta": 0.2692349190000849,
+      "daily_roas_delta_ci_95": [
+        0.2661962641060656,
+        0.27227357389410417
+      ],
+      "z_score": 173.66251175110256,
+      "p_value_two_tailed": 0.0,
+      "statistically_significant_at_95": true,
+      "sensitivity_uplift_range_pct": [
+        -7.309637981496989,
+        24.69036201850301
+      ],
+      "assumptions": {
+        "attribution_error_pct": 9.0,
+        "elasticity_error_pct": 7.0,
+        "seasonality_residual_pct": 5.0
+      }
+    },
+    "business_value_quantified": true
+  },
+  "exit_criteria": {
+    "business_value_quantified": true,
+    "roas_uplift_positive": true,
+    "waste_reduction_positive": true,
+    "statistically_significant": true
+  }
+}
