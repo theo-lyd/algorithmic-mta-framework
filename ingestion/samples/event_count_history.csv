@@ -1,0 +1,17 @@
+event_date,source_channel,event_count
+2026-04-01,search,1200
+2026-04-02,search,1250
+2026-04-03,search,1180
+2026-04-04,search,1275
+2026-04-05,search,1235
+2026-04-06,search,1210
+2026-04-07,search,1222
+2026-04-08,search,450
+2026-04-01,affiliate,400
+2026-04-02,affiliate,420
+2026-04-03,affiliate,390
+2026-04-04,affiliate,415
+2026-04-05,affiliate,405
+2026-04-06,affiliate,398
+2026-04-07,affiliate,410
+2026-04-08,affiliate,405
