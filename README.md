@@ -40,6 +40,15 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-0-batch-0-2-report.md](doc/batches/phase-0-batch-0-2-report.md)
 	- Command Log: [doc/batches/phase-0-batch-0-2-commands.md](doc/batches/phase-0-batch-0-2-commands.md)
 
+- **Batch 0.3 (Security and Compliance Baseline)**
+	- Security and Compliance Baseline: [doc/phase-0/batch-0-3-security-compliance.md](doc/phase-0/batch-0-3-security-compliance.md)
+	- Secrets and Rotation Policy: [doc/phase-0/secrets-key-rotation.md](doc/phase-0/secrets-key-rotation.md)
+	- PII Classification and Masking Policy: [doc/phase-0/pii-classification-masking.md](doc/phase-0/pii-classification-masking.md)
+	- Access Control Matrix: [doc/phase-0/access-control-matrix.md](doc/phase-0/access-control-matrix.md)
+	- Security Validation Evidence: [doc/phase-0/batch-0-3-security-validation.md](doc/phase-0/batch-0-3-security-validation.md)
+	- Batch Report: [doc/batches/phase-0-batch-0-3-report.md](doc/batches/phase-0-batch-0-3-report.md)
+	- Command Log: [doc/batches/phase-0-batch-0-3-commands.md](doc/batches/phase-0-batch-0-3-commands.md)
+
 - **Batch 0.4 (Jira Import & Operationalization)**
   - Completion Report: [doc/batches/phase-0-batch-0-4-jira-import.md](doc/batches/phase-0-batch-0-4-jira-import.md) — What was built, why decisions, issues resolved, acceptance criteria (1400+ lines)
   - Command Log: [doc/batches/phase-0-batch-0-4-commands.md](doc/batches/phase-0-batch-0-4-commands.md) — 30+ commands with expected outputs, troubleshooting guide (500+ lines)
