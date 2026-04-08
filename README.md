@@ -212,6 +212,53 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-3-batch-3-3-report.md](doc/batches/phase-3-batch-3-3-report.md)
 	- Command Log: [doc/batches/phase-3-batch-3-3-commands.md](doc/batches/phase-3-batch-3-3-commands.md)
 
+### Phase 4 Batch Artifacts
+- **Batch 4.1 (Heuristic Baseline Models)**
+	- Heuristic Attribution Logic: [ingestion/pipeline/heuristic_attribution.py](ingestion/pipeline/heuristic_attribution.py)
+	- Fixture Data: [tests/fixtures/phase4/attribution_events.json](tests/fixtures/phase4/attribution_events.json)
+	- Unit Tests: [tests/phase4/test_heuristic_attribution.py](tests/phase4/test_heuristic_attribution.py)
+	- Validation Runner: [ingestion/pipeline/validate_heuristic_attribution.py](ingestion/pipeline/validate_heuristic_attribution.py)
+	- Validation Evidence: [doc/phase-4/batch-4-1-heuristic-validation.md](doc/phase-4/batch-4-1-heuristic-validation.md)
+	- Batch Report: [doc/batches/phase-4-batch-4-1-report.md](doc/batches/phase-4-batch-4-1-report.md)
+	- Command Log: [doc/batches/phase-4-batch-4-1-commands.md](doc/batches/phase-4-batch-4-1-commands.md)
+
+- **Batch 4.2 (Markov Chain Attribution Engine)**
+	- Markov Attribution Logic: [ingestion/pipeline/markov_attribution.py](ingestion/pipeline/markov_attribution.py)
+	- Unit Tests: [tests/phase4/test_markov_attribution.py](tests/phase4/test_markov_attribution.py)
+	- Validation Runner: [ingestion/pipeline/validate_markov_attribution.py](ingestion/pipeline/validate_markov_attribution.py)
+	- Validation Evidence: [doc/phase-4/batch-4-2-markov-validation.md](doc/phase-4/batch-4-2-markov-validation.md)
+	- Batch Report: [doc/batches/phase-4-batch-4-2-report.md](doc/batches/phase-4-batch-4-2-report.md)
+	- Command Log: [doc/batches/phase-4-batch-4-2-commands.md](doc/batches/phase-4-batch-4-2-commands.md)
+
+- **Batch 4.3 (Supervised Conversion Propensity Model)**
+	- Propensity Model Logic: [ingestion/pipeline/propensity_model.py](ingestion/pipeline/propensity_model.py)
+	- Fixture Data: [tests/fixtures/phase4/customer_events.json](tests/fixtures/phase4/customer_events.json)
+	- Unit Tests: [tests/phase4/test_propensity_model.py](tests/phase4/test_propensity_model.py)
+	- Validation Runner: [ingestion/pipeline/validate_propensity_model.py](ingestion/pipeline/validate_propensity_model.py)
+	- Validation Evidence: [doc/phase-4/batch-4-3-propensity-validation.md](doc/phase-4/batch-4-3-propensity-validation.md)
+	- Batch Report: [doc/batches/phase-4-batch-4-3-report.md](doc/batches/phase-4-batch-4-3-report.md)
+	- Command Log: [doc/batches/phase-4-batch-4-3-commands.md](doc/batches/phase-4-batch-4-3-commands.md)
+
+- **Batch 4.4 (Behavioral Segmentation)**
+	- Segmentation Logic: [ingestion/pipeline/behavioral_segmentation.py](ingestion/pipeline/behavioral_segmentation.py)
+	- Unit Tests: [tests/phase4/test_behavioral_segmentation.py](tests/phase4/test_behavioral_segmentation.py)
+	- Validation Runner: [ingestion/pipeline/validate_behavioral_segmentation.py](ingestion/pipeline/validate_behavioral_segmentation.py)
+	- Validation Evidence: [doc/phase-4/batch-4-4-segmentation-validation.md](doc/phase-4/batch-4-4-segmentation-validation.md)
+	- Batch Report: [doc/batches/phase-4-batch-4-4-report.md](doc/batches/phase-4-batch-4-4-report.md)
+	- Command Log: [doc/batches/phase-4-batch-4-4-commands.md](doc/batches/phase-4-batch-4-4-commands.md)
+
+- **Batch 4.5 (Attribution-to-Finance Bridge)**
+	- Finance Bridge Logic: [ingestion/pipeline/attribution_finance_bridge.py](ingestion/pipeline/attribution_finance_bridge.py)
+	- Spend Fixture Data: [tests/fixtures/phase4/channel_spend.json](tests/fixtures/phase4/channel_spend.json)
+	- Unit Tests: [tests/phase4/test_finance_bridge.py](tests/phase4/test_finance_bridge.py)
+	- Validation Runner: [ingestion/pipeline/validate_finance_bridge.py](ingestion/pipeline/validate_finance_bridge.py)
+	- Validation Evidence: [doc/phase-4/batch-4-5-finance-bridge-validation.md](doc/phase-4/batch-4-5-finance-bridge-validation.md)
+	- Batch Report: [doc/batches/phase-4-batch-4-5-report.md](doc/batches/phase-4-batch-4-5-report.md)
+	- Command Log: [doc/batches/phase-4-batch-4-5-commands.md](doc/batches/phase-4-batch-4-5-commands.md)
+
+- **Phase 4 Gate Check**
+	- Gate Check Report: [doc/phase-4/phase-4-gate-check-report.md](doc/phase-4/phase-4-gate-check-report.md)
+
 ## Quick Start
 
 1. Install dependencies:
