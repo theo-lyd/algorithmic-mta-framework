@@ -1,0 +1,16 @@
+[
+  {
+    "source_file_id": "partner_20260407_00.json",
+    "source_channel": "affiliate",
+    "partition_date": "2026-04-07",
+    "arrived_rows": 120,
+    "arrived_at": "2026-04-07T02:00:00Z"
+  },
+  {
+    "source_file_id": "partner_20260408_01.json",
+    "source_channel": "display",
+    "partition_date": "2026-04-08",
+    "arrived_rows": 90,
+    "arrived_at": "2026-04-08T03:00:00Z"
+  }
+]

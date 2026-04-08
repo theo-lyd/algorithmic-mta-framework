@@ -1,0 +1,20 @@
+[
+  {
+    "source_file_id": "partner_20260407_00.json",
+    "source_channel": "affiliate",
+    "partition_date": "2026-04-07",
+    "expected_rows": 120
+  },
+  {
+    "source_file_id": "partner_20260408_00.json",
+    "source_channel": "affiliate",
+    "partition_date": "2026-04-08",
+    "expected_rows": 140
+  },
+  {
+    "source_file_id": "partner_20260408_01.json",
+    "source_channel": "display",
+    "partition_date": "2026-04-08",
+    "expected_rows": 90
+  }
+]
