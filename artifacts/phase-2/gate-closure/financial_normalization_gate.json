@@ -1,0 +1,40 @@
+{
+  "total_cases": 4,
+  "passed_cases": 4,
+  "failed_cases": 0,
+  "all_passed": true,
+  "results": [
+    {
+      "raw_text": "1,25 Mio EUR",
+      "currency": "EUR",
+      "amount_native": 1250000.0,
+      "fx_rate_to_eur": 1.0,
+      "amount_eur": 1250000.0,
+      "matches_expected": true
+    },
+    {
+      "raw_text": "2.5 million USD",
+      "currency": "USD",
+      "amount_native": 2500000.0,
+      "fx_rate_to_eur": 0.9,
+      "amount_eur": 2250000.0,
+      "matches_expected": true
+    },
+    {
+      "raw_text": "3,2 Mrd GBP",
+      "currency": "GBP",
+      "amount_native": 3200000000.0,
+      "fx_rate_to_eur": 1.16,
+      "amount_eur": 3712000000.0,
+      "matches_expected": true
+    },
+    {
+      "raw_text": "1.234,56 CHF",
+      "currency": "CHF",
+      "amount_native": 1234.56,
+      "fx_rate_to_eur": 1.02,
+      "amount_eur": 1259.25,
+      "matches_expected": true
+    }
+  ]
+}

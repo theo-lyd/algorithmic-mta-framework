@@ -1,0 +1,40 @@
+{
+  "total_cases": 4,
+  "passed_cases": 4,
+  "failed_cases": 0,
+  "all_passed": true,
+  "results": [
+    {
+      "raw_text": "M\u00fcnchen   Media\u00a0GmbH",
+      "display_text": "M\u00fcnchen Media GmbH",
+      "join_key_text": "muenchen_media_gmbh",
+      "source_encoding": "unicode",
+      "display_match": true,
+      "join_key_match": true
+    },
+    {
+      "raw_text": "Stra\u00dfe des 17. Juni",
+      "display_text": "Stra\u00dfe des 17. Juni",
+      "join_key_text": "strasse_des_17_juni",
+      "source_encoding": "unicode",
+      "display_match": true,
+      "join_key_match": true
+    },
+    {
+      "raw_text": "K\u00f6ln-Partner\tNord",
+      "display_text": "K\u00f6ln-Partner Nord",
+      "join_key_text": "koeln_partner_nord",
+      "source_encoding": "unicode",
+      "display_match": true,
+      "join_key_match": true
+    },
+    {
+      "raw_text": "  D\u00fcsseldorf\nCampaign  ",
+      "display_text": "D\u00fcsseldorf Campaign",
+      "join_key_text": "duesseldorf_campaign",
+      "source_encoding": "unicode",
+      "display_match": true,
+      "join_key_match": true
+    }
+  ]
+}
