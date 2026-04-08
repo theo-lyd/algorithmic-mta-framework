@@ -1,0 +1,63 @@
+{
+    "expectation_suite_name": "silver_events_quality_suite",
+    "meta": {
+        "phase": "2",
+        "batch": "2.4",
+        "description": "Null, range, uniqueness, and referential integrity checks for canonical silver tables."
+    },
+    "expectations": [
+        {
+            "expectation_type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "column": "event_id"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "column": "event_timestamp"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "column": "user_pseudo_id"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_not_be_null",
+            "kwargs": {
+                "column": "source_channel"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_unique",
+            "kwargs": {
+                "column": "event_id"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_between",
+            "kwargs": {
+                "column": "event_count",
+                "min_value": 1
+            }
+        },
+        {
+            "expectation_type": "expect_compound_columns_to_be_unique",
+            "kwargs": {
+                "column_list": [
+                    "session_id",
+                    "user_pseudo_id"
+                ]
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_in_set",
+            "kwargs": {
+                "column": "source_channel",
+                "value_set": "$ref:dim_channel.source_channel"
+            }
+        }
+    ]
+}
