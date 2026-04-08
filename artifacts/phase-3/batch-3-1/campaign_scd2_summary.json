@@ -1,0 +1,50 @@
+{
+  "scd2_summary": {
+    "campaign_rows": 5,
+    "campaign_ids": 2,
+    "current_rows": 2,
+    "historical_rows": 3
+  },
+  "point_in_time_join": {
+    "total_events": 5,
+    "matched_events": 5,
+    "all_events_matched": true
+  },
+  "sample_assignments": [
+    {
+      "event_id": "evt-3001",
+      "campaign_id": "cmp-001",
+      "owner_name": "team_search",
+      "budget_eur": 100000.0,
+      "taxonomy_l2": "search_brand"
+    },
+    {
+      "event_id": "evt-3002",
+      "campaign_id": "cmp-001",
+      "owner_name": "team_growth",
+      "budget_eur": 130000.0,
+      "taxonomy_l2": "search_non_brand"
+    },
+    {
+      "event_id": "evt-3003",
+      "campaign_id": "cmp-001",
+      "owner_name": "team_growth",
+      "budget_eur": 150000.0,
+      "taxonomy_l2": "search_non_brand"
+    },
+    {
+      "event_id": "evt-3004",
+      "campaign_id": "cmp-002",
+      "owner_name": "team_affiliate",
+      "budget_eur": 70000.0,
+      "taxonomy_l2": "affiliate_core"
+    },
+    {
+      "event_id": "evt-3005",
+      "campaign_id": "cmp-002",
+      "owner_name": "team_affiliate",
+      "budget_eur": 85000.0,
+      "taxonomy_l2": "affiliate_expansion"
+    }
+  ]
+}
