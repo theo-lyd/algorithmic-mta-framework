@@ -101,6 +101,11 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-1-batch-1-4-report.md](doc/batches/phase-1-batch-1-4-report.md)
 	- Command Log: [doc/batches/phase-1-batch-1-4-commands.md](doc/batches/phase-1-batch-1-4-commands.md)
 
+- **Batch 1.5 (Phase 1 Closure Gate Check)**
+	- Gate Check Report: [doc/phase-1/phase-1-gate-check-report.md](doc/phase-1/phase-1-gate-check-report.md)
+	- Closure Batch Report: [doc/batches/phase-1-batch-1-5-closure-report.md](doc/batches/phase-1-batch-1-5-closure-report.md)
+	- Closure Command Log: [doc/batches/phase-1-batch-1-5-commands.md](doc/batches/phase-1-batch-1-5-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
