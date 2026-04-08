@@ -64,6 +64,16 @@ The repository is structured to support end-to-end analytics engineering and ML 
   - Jira Import CSV: [doc/backlog/mta-framework-jira-import.csv](doc/backlog/mta-framework-jira-import.csv) — Ready-to-import (40 stories, 273 points, 10 sprints)
   - CSV Generator Script: [scripts/generate_jira_csv.py](scripts/generate_jira_csv.py) — Reusable markdown→Jira CSV automation with validation
 
+### Phase 1 Batch Artifacts
+- **Batch 1.1 (Source Onboarding and Connector Hardening)**
+	- Source Contracts Baseline: [doc/phase-1/batch-1-1-source-contracts.md](doc/phase-1/batch-1-1-source-contracts.md)
+	- Airbyte Connector Config: [ingestion/airbyte/connectors/ga4_partner_connectors.yaml](ingestion/airbyte/connectors/ga4_partner_connectors.yaml)
+	- Sync Strategy: [ingestion/airbyte/sync_strategy.md](ingestion/airbyte/sync_strategy.md)
+	- Idempotency and Dedup Strategy: [ingestion/contracts/idempotency_dedup.md](ingestion/contracts/idempotency_dedup.md)
+	- Idempotency Helper Implementation: [ingestion/pipeline/idempotency.py](ingestion/pipeline/idempotency.py)
+	- Batch Report: [doc/batches/phase-1-batch-1-1-report.md](doc/batches/phase-1-batch-1-1-report.md)
+	- Command Log: [doc/batches/phase-1-batch-1-1-commands.md](doc/batches/phase-1-batch-1-1-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
