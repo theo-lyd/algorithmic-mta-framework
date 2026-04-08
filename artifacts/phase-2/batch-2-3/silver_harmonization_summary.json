@@ -1,0 +1,11 @@
+{
+  "events_count": 4,
+  "event_params_count": 8,
+  "event_items_count": 3,
+  "sessions_count": 3,
+  "dim_channel_count": 2,
+  "dim_campaign_count": 2,
+  "dim_device_count": 2,
+  "dim_geography_count": 2,
+  "sessionization_rule_valid": true
+}
