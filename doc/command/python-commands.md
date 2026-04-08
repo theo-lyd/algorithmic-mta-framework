@@ -2,7 +2,7 @@
 
 Status: Active
 Last Updated: 2026-04-08
-Coverage: Phase 0 to Phase 5.4
+Coverage: Phase 0 to Phase 6.3
 
 ## Purpose
 Track all Python commands used in project setup, validation, and ingestion pipeline execution.
@@ -41,6 +41,10 @@ Track all Python commands used in project setup, validation, and ingestion pipel
 - PYTHONPATH=. python ingestion/pipeline/validate_cicd_automation.py
 - PYTHONPATH=. python ingestion/pipeline/validate_performance_cost.py
 - python scripts/version_artifacts.py
+- PYTHONPATH=. python dashboards/metabase/validate_batch_61.py
+- PYTHONPATH=. python dashboards/streamlit/validate_batch_62.py
+- PYTHONPATH=. python dashboards/governance/validate_batch_63.py
+- PYTHONPATH=. python -m unittest discover -s tests/phase6 -p 'test_*.py'
 
 ## Typical Patterns
 - Module validation:

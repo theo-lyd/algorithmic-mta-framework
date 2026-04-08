@@ -304,6 +304,37 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- SEV-2 Runbook: [doc/phase-5/runbook-sev2-freshness-schema.md](doc/phase-5/runbook-sev2-freshness-schema.md)
 	- SEV-3 Runbook: [doc/phase-5/runbook-sev3-volume-distribution.md](doc/phase-5/runbook-sev3-volume-distribution.md)
 
+### Phase 6 Batch Artifacts
+- **Batch 6.1 (Metabase Executive Dashboards)**
+	- Dashboard Query Logic: [dashboards/metabase/executive_dashboards.py](dashboards/metabase/executive_dashboards.py)
+	- Fixture Data: [tests/fixtures/phase6/dashboard_metrics.json](tests/fixtures/phase6/dashboard_metrics.json)
+	- Unit Tests: [tests/phase6/test_batch_61_dashboards.py](tests/phase6/test_batch_61_dashboards.py)
+	- Validation Runner: [dashboards/metabase/validate_batch_61.py](dashboards/metabase/validate_batch_61.py)
+	- Validation Evidence: [artifacts/phase-6/batch-6-1/dashboard_summary.json](artifacts/phase-6/batch-6-1/dashboard_summary.json)
+	- Validation Report: [doc/batches/phase-6-batch-6-1-validation.md](doc/batches/phase-6-batch-6-1-validation.md)
+
+- **Batch 6.2 (Streamlit What-If Simulator)**
+	- Simulator Logic: [dashboards/streamlit/whatif_simulator.py](dashboards/streamlit/whatif_simulator.py)
+	- Fixture Data: [tests/fixtures/phase6/simulator_data.json](tests/fixtures/phase6/simulator_data.json)
+	- Unit Tests: [tests/phase6/test_batch_62_simulator.py](tests/phase6/test_batch_62_simulator.py)
+	- Validation Runner: [dashboards/streamlit/validate_batch_62.py](dashboards/streamlit/validate_batch_62.py)
+	- Validation Evidence: [artifacts/phase-6/batch-6-2/simulator_summary.json](artifacts/phase-6/batch-6-2/simulator_summary.json)
+	- Validation Report: [doc/batches/phase-6-batch-6-2-validation.md](doc/batches/phase-6-batch-6-2-validation.md)
+
+- **Batch 6.3 (Decision Governance and Adoption)**
+	- Governance Framework: [dashboards/governance/decision_framework.py](dashboards/governance/decision_framework.py)
+	- KPI Glossary: 7 board-level metrics (ROAS, RE, variance, contribution, waste, AUC, freshness)
+	- Monthly Decision Ritual: Marketing Budget Council (60 min, 4 participants, 6-item agenda)
+	- Training Curriculum: 3 role-based modules (CMO 90m, Finance 60m, Growth 45m)
+	- Unit Tests: [tests/phase6/test_batch_63_governance.py](tests/phase6/test_batch_63_governance.py)
+	- Validation Runner: [dashboards/governance/validate_batch_63.py](dashboards/governance/validate_batch_63.py)
+	- Validation Evidence: [artifacts/phase-6/batch-6-3/governance_summary.json](artifacts/phase-6/batch-6-3/governance_summary.json)
+	- Validation Report: [doc/batches/phase-6-batch-6-3-validation.md](doc/batches/phase-6-batch-6-3-validation.md)
+
+- **Phase 6 Gate Check & Documentation**
+	- Gate Check Report: [doc/phase-6/phase-6-gate-check-report.md](doc/phase-6/phase-6-gate-check-report.md) — 3/3 gates passing (dashboards trusted, simulator functional, stakeholders ready)
+	- Command Log: [doc/batches/phase-6-commands.md](doc/batches/phase-6-commands.md) — 25+ commands with validation outputs
+
 ## Quick Start
 
 1. Install dependencies:
