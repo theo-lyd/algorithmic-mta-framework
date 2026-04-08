@@ -82,6 +82,15 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-1-batch-1-2-report.md](doc/batches/phase-1-batch-1-2-report.md)
 	- Command Log: [doc/batches/phase-1-batch-1-2-commands.md](doc/batches/phase-1-batch-1-2-commands.md)
 
+- **Batch 1.3 (Late-Arriving Data Orchestration)**
+	- Late Arrival Logic: [ingestion/pipeline/late_arrival.py](ingestion/pipeline/late_arrival.py)
+	- Airflow Orchestration DAG: [airflow/dags/late_arrival_orchestration.py](airflow/dags/late_arrival_orchestration.py)
+	- Expected Manifest Sample: [ingestion/samples/partner_expected_manifest.json](ingestion/samples/partner_expected_manifest.json)
+	- Arrived Manifest Sample: [ingestion/samples/partner_arrived_manifest.json](ingestion/samples/partner_arrived_manifest.json)
+	- Validation Evidence: [doc/phase-1/batch-1-3-late-arrival-validation.md](doc/phase-1/batch-1-3-late-arrival-validation.md)
+	- Batch Report: [doc/batches/phase-1-batch-1-3-report.md](doc/batches/phase-1-batch-1-3-report.md)
+	- Command Log: [doc/batches/phase-1-batch-1-3-commands.md](doc/batches/phase-1-batch-1-3-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
