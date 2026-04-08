@@ -36,6 +36,20 @@ Record issues encountered in Phase 2 and how they were resolved.
 - Lesson learned:
 	- Financial parsing should be policy-driven and fixture-locked before downstream aggregation logic is introduced.
 
+## Issue 2.3 - Potential schema drift from nested event payloads
+- What issue was encountered:
+	- Nested params/items and optional device/geography objects can produce inconsistent silver schemas if flattened ad-hoc.
+- Cause:
+	- Source systems emit heterogeneous nested payload structures across event types.
+- Solution applied:
+	- Implemented canonical flattening helpers and relational bridge tables with deterministic sessionization and dimension builders.
+- How solution was implemented:
+	- Added `silver_harmonization.py`, fixture-backed tests, and validation runner with summary artifact.
+- How to avoid in future:
+	- Keep canonical silver schema contract explicit and enforce with quality checks in Batch 2.4.
+- Lesson learned:
+	- Nested-event harmonization must be contract-driven before quality and modeling layers are expanded.
+
 ## Issue Template
 - What issue was encountered:
 - Cause:

@@ -25,6 +25,7 @@ Track all Python commands used in project setup, validation, and ingestion pipel
 - PYTHONPATH=. python -m unittest discover -s tests/phase2 -p 'test_*.py'
 - PYTHONPATH=. python ingestion/pipeline/validate_text_normalization.py
 - PYTHONPATH=. python ingestion/pipeline/validate_financial_normalization.py
+- PYTHONPATH=. python ingestion/pipeline/validate_silver_harmonization.py
 
 ## Typical Patterns
 - Module validation:

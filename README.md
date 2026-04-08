@@ -156,6 +156,16 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-2-batch-2-2-report.md](doc/batches/phase-2-batch-2-2-report.md)
 	- Command Log: [doc/batches/phase-2-batch-2-2-commands.md](doc/batches/phase-2-batch-2-2-commands.md)
 
+- **Batch 2.3 (JSON Flattening and Canonical Silver Schema)**
+	- Silver Harmonization Library: [ingestion/pipeline/silver_harmonization.py](ingestion/pipeline/silver_harmonization.py)
+	- Silver Fixture Data: [tests/fixtures/phase2/silver/raw_events_for_silver.jsonl](tests/fixtures/phase2/silver/raw_events_for_silver.jsonl)
+	- Unit Tests: [tests/phase2/test_silver_harmonization.py](tests/phase2/test_silver_harmonization.py)
+	- Validation Runner: [ingestion/pipeline/validate_silver_harmonization.py](ingestion/pipeline/validate_silver_harmonization.py)
+	- Canonical Silver Schema: [doc/phase-2/batch-2-3-canonical-silver-schema.md](doc/phase-2/batch-2-3-canonical-silver-schema.md)
+	- Validation Evidence: [doc/phase-2/batch-2-3-silver-harmonization-validation.md](doc/phase-2/batch-2-3-silver-harmonization-validation.md)
+	- Batch Report: [doc/batches/phase-2-batch-2-3-report.md](doc/batches/phase-2-batch-2-3-report.md)
+	- Command Log: [doc/batches/phase-2-batch-2-3-commands.md](doc/batches/phase-2-batch-2-3-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
