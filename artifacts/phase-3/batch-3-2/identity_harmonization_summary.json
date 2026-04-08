@@ -1,0 +1,36 @@
+{
+  "resolution_summary": {
+    "resolved_rows": 3,
+    "unresolved_rows": 2,
+    "unique_customer_hashes": 2,
+    "avg_confidence": 0.96
+  },
+  "unresolved_queue_path": "artifacts/phase-3/batch-3-2/unresolved_identity_queue.csv",
+  "resolved_records": [
+    {
+      "record_id": "id-001",
+      "customer_hash": "cust_fffe3faeead8c8bc",
+      "identity_confidence_score": 0.99
+    },
+    {
+      "record_id": "id-002",
+      "customer_hash": "cust_fffe3faeead8c8bc",
+      "identity_confidence_score": 0.9
+    },
+    {
+      "record_id": "id-003",
+      "customer_hash": "cust_4b7864d99239073e",
+      "identity_confidence_score": 0.99
+    }
+  ],
+  "unresolved_records": [
+    {
+      "record_id": "id-004",
+      "reason": "conflicting_identifier_clusters"
+    },
+    {
+      "record_id": "id-005",
+      "reason": "no_identifiers_available"
+    }
+  ]
+}

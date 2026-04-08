@@ -1,0 +1,3 @@
+record_id,crm_customer_id,email_hash,phone_hash,user_pseudo_id,device_id,identity_confidence_score,resolution_status,reason
+id-004,crm-201,ehash-b,,u-201,d-201,0.0,unresolved,conflicting_identifier_clusters
+id-005,,,,,,0.0,unresolved,no_identifiers_available
