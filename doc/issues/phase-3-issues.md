@@ -22,6 +22,20 @@ Record issues encountered in Phase 3 and how they were resolved.
 - Lesson learned:
 	- Attribution integrity depends on temporal correctness as much as raw event quality.
 
+## Issue 3.2 - Ambiguous cross-identifier merges can corrupt customer profiles
+- What issue was encountered:
+	- A record with a new CRM id but already-linked email can silently merge into the wrong identity cluster.
+- Cause:
+	- Multi-identifier joins can expose conflicting clusters when CRM and web identifiers disagree.
+- Solution applied:
+	- Added explicit conflict detection and routed conflicts to unresolved identity queue.
+- How solution was implemented:
+	- Extended identity resolver with conflict rules, deterministic tests, and unresolved queue artifact output.
+- How to avoid in future:
+	- Treat cross-cluster identifier collisions as hard conflicts requiring manual triage, not auto-merge.
+- Lesson learned:
+	- Conservative unresolved-queue routing is safer than optimistic merge logic for identity integrity.
+
 ## Issue Template
 - What issue was encountered:
 - Cause:

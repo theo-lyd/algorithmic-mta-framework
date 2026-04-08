@@ -28,6 +28,7 @@ Track all Python commands used in project setup, validation, and ingestion pipel
 - PYTHONPATH=. python ingestion/pipeline/validate_silver_harmonization.py
 - PYTHONPATH=. python ingestion/pipeline/validate_silver_contracts.py
 - PYTHONPATH=. python ingestion/pipeline/validate_campaign_scd2.py
+- PYTHONPATH=. python ingestion/pipeline/validate_identity_harmonization.py
 
 ## Typical Patterns
 - Module validation:

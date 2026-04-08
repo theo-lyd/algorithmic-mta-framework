@@ -194,6 +194,15 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-3-batch-3-1-report.md](doc/batches/phase-3-batch-3-1-report.md)
 	- Command Log: [doc/batches/phase-3-batch-3-1-commands.md](doc/batches/phase-3-batch-3-1-commands.md)
 
+- **Batch 3.2 (Unified Identity and Customer Hash Harmonization)**
+	- Identity Harmonization Logic: [ingestion/pipeline/identity_harmonization.py](ingestion/pipeline/identity_harmonization.py)
+	- Identity Fixture Data: [tests/fixtures/phase3/identity_records.json](tests/fixtures/phase3/identity_records.json)
+	- Unit Tests: [tests/phase3/test_identity_harmonization.py](tests/phase3/test_identity_harmonization.py)
+	- Validation Runner: [ingestion/pipeline/validate_identity_harmonization.py](ingestion/pipeline/validate_identity_harmonization.py)
+	- Validation Evidence: [doc/phase-3/batch-3-2-identity-harmonization-validation.md](doc/phase-3/batch-3-2-identity-harmonization-validation.md)
+	- Batch Report: [doc/batches/phase-3-batch-3-2-report.md](doc/batches/phase-3-batch-3-2-report.md)
+	- Command Log: [doc/batches/phase-3-batch-3-2-commands.md](doc/batches/phase-3-batch-3-2-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:
