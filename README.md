@@ -166,6 +166,18 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Batch Report: [doc/batches/phase-2-batch-2-3-report.md](doc/batches/phase-2-batch-2-3-report.md)
 	- Command Log: [doc/batches/phase-2-batch-2-3-commands.md](doc/batches/phase-2-batch-2-3-commands.md)
 
+- **Batch 2.4 (Data Quality Contracts)**
+	- GE Suite: [quality/great_expectations/suites/silver_events_quality_suite.json](quality/great_expectations/suites/silver_events_quality_suite.json)
+	- GE Checkpoint: [quality/great_expectations/checkpoints/silver_quality_checkpoint.yml](quality/great_expectations/checkpoints/silver_quality_checkpoint.yml)
+	- Contract Rules Engine: [quality/contracts/silver_contracts.py](quality/contracts/silver_contracts.py)
+	- Quarantine Workflow: [quality/contracts/quarantine.py](quality/contracts/quarantine.py)
+	- Contract Tests: [tests/phase2/test_silver_contracts.py](tests/phase2/test_silver_contracts.py)
+	- Validation Runner: [ingestion/pipeline/validate_silver_contracts.py](ingestion/pipeline/validate_silver_contracts.py)
+	- Validation Summary: [doc/phase-2/batch-2-4-quality-validation.md](doc/phase-2/batch-2-4-quality-validation.md)
+	- Contract Spec: [doc/phase-2/batch-2-4-data-quality-contracts.md](doc/phase-2/batch-2-4-data-quality-contracts.md)
+	- Batch Report: [doc/batches/phase-2-batch-2-4-report.md](doc/batches/phase-2-batch-2-4-report.md)
+	- Command Log: [doc/batches/phase-2-batch-2-4-commands.md](doc/batches/phase-2-batch-2-4-commands.md)
+
 ## Quick Start
 
 1. Install dependencies:

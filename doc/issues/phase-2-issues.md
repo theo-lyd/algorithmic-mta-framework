@@ -50,6 +50,20 @@ Record issues encountered in Phase 2 and how they were resolved.
 - Lesson learned:
 	- Nested-event harmonization must be contract-driven before quality and modeling layers are expanded.
 
+## Issue 2.4 - Contract failure payload serialization in quarantine workflow
+- What issue was encountered:
+	- Quarantine writer failed when serializing pandas Timestamp values to JSON.
+- Cause:
+	- Default JSON encoder cannot serialize Timestamp objects.
+- Solution applied:
+	- Enabled fallback string serialization for quarantine JSON payload writing.
+- How solution was implemented:
+	- Updated quarantine writer to use `json.dumps(..., default=str)`.
+- How to avoid in future:
+	- Add serialization compatibility checks for datetime-like fields in all artifact writers.
+- Lesson learned:
+	- Quarantine pipelines must treat data-type normalization as part of reliability, not post-processing.
+
 ## Issue Template
 - What issue was encountered:
 - Cause:
