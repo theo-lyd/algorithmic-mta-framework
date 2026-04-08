@@ -1,0 +1,179 @@
+name: cross-phase-checks
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  cross-phase-validation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        phase: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Phase ${{ matrix.phase }} validators
+        run: |
+          PYTHONPATH=. python -m unittest discover -s tests/phase${{ matrix.phase }} -p 'test_*.py' -v
+        continue-on-error: false
+
+      - name: Run Phase ${{ matrix.phase }} batch validators
+        run: |
+          if [ -d "ingestion/pipeline/phase${{ matrix.phase }}" ]; then
+            for validator in ingestion/pipeline/phase${{ matrix.phase }}/validate_batch_*.py; do
+              if [ -f "$validator" ]; then
+                PYTHONPATH=. python "$validator"
+              fi
+            done
+          fi
+        continue-on-error: false
+
+      - name: Upload Phase ${{ matrix.phase }} artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase${{ matrix.phase }}-artifacts
+          path: artifacts/phase-${{ matrix.phase }}/
+
+  gate-a-data-contracts:
+    runs-on: ubuntu-latest
+    needs: [cross-phase-validation]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Gate A: Schema and data contracts
+        run: |
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_*_contracts.py' -v
+
+  gate-b-business-logic:
+    runs-on: ubuntu-latest
+    needs: [cross-phase-validation]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Gate B: Business logic rules
+        run: |
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_*_rules.py' -v
+
+  gate-c-performance:
+    runs-on: ubuntu-latest
+    needs: [cross-phase-validation]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Gate C: Performance and cost baseline
+        run: |
+          PYTHONPATH=. python -m unittest discover -s tests -p 'test_*_performance.py' -v
+
+  gate-d-compliance-check:
+    runs-on: ubuntu-latest
+    needs: [gate-a-data-contracts, gate-b-business-logic, gate-c-performance]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Gate D: Compliance and governance
+        run: |
+          PYTHONPATH=. python governance/gate_d_signoff.py --mode=verify --branch=${{ github.head_ref || github.ref_name }}
+
+      - name: ML Governance: Bias and drift detection
+        run: |
+          PYTHONPATH=. python ml_governance/drift_bias_automation.py --mode=detect --phase=all
+
+      - name: Generate compliance report
+        if: always()
+        run: |
+          PYTHONPATH=. python governance/gate_d_signoff.py --mode=report --branch=${{ github.head_ref || github.ref_name }}
+
+      - name: Upload compliance artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-d-compliance-artifacts
+          path: artifacts/gate-d/
+
+  summary:
+    runs-on: ubuntu-latest
+    needs: [gate-d-compliance-check]
+    if: always()
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate cross-phase summary
+        run: |
+          PYTHONPATH=. python governance/cross_phase_summary.py --artifacts-dir=artifacts
+
+      - name: Upload summary
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cross-phase-summary
+          path: artifacts/cross-phase-summary.json
