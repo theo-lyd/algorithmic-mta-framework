@@ -1,0 +1,10 @@
+{
+  "selected_k": 2,
+  "silhouette": 0.4419043438979487,
+  "stability": 1.0,
+  "segment_counts": {
+    "Champions": 5,
+    "Loyal": 5
+  },
+  "segment_labels_path": "artifacts/phase-4/batch-4-4/segment_labels.csv"
+}

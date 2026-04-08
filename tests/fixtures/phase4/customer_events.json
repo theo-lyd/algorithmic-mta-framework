@@ -1,0 +1,191 @@
+[
+    {
+        "event_id": "u1-1",
+        "user_id": "u1",
+        "event_timestamp": "2026-02-02T09:00:00Z",
+        "event_name": "page_view",
+        "channel": "search",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u1-2",
+        "user_id": "u1",
+        "event_timestamp": "2026-02-10T09:00:00Z",
+        "event_name": "add_to_cart",
+        "channel": "search",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u1-3",
+        "user_id": "u1",
+        "event_timestamp": "2026-03-03T09:00:00Z",
+        "event_name": "purchase",
+        "channel": "search",
+        "is_conversion": true,
+        "revenue_eur": 120
+    },
+    {
+        "event_id": "u2-1",
+        "user_id": "u2",
+        "event_timestamp": "2026-02-05T10:00:00Z",
+        "event_name": "page_view",
+        "channel": "social",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u2-2",
+        "user_id": "u2",
+        "event_timestamp": "2026-02-25T10:00:00Z",
+        "event_name": "product_view",
+        "channel": "social",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u3-1",
+        "user_id": "u3",
+        "event_timestamp": "2026-02-08T12:00:00Z",
+        "event_name": "page_view",
+        "channel": "email",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u3-2",
+        "user_id": "u3",
+        "event_timestamp": "2026-02-20T12:00:00Z",
+        "event_name": "purchase",
+        "channel": "email",
+        "is_conversion": true,
+        "revenue_eur": 70
+    },
+    {
+        "event_id": "u3-3",
+        "user_id": "u3",
+        "event_timestamp": "2026-03-05T12:00:00Z",
+        "event_name": "purchase",
+        "channel": "email",
+        "is_conversion": true,
+        "revenue_eur": 80
+    },
+    {
+        "event_id": "u4-1",
+        "user_id": "u4",
+        "event_timestamp": "2026-02-01T08:00:00Z",
+        "event_name": "page_view",
+        "channel": "display",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u4-2",
+        "user_id": "u4",
+        "event_timestamp": "2026-02-03T08:00:00Z",
+        "event_name": "page_view",
+        "channel": "display",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u5-1",
+        "user_id": "u5",
+        "event_timestamp": "2026-02-15T15:00:00Z",
+        "event_name": "page_view",
+        "channel": "affiliate",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u5-2",
+        "user_id": "u5",
+        "event_timestamp": "2026-03-06T15:00:00Z",
+        "event_name": "purchase",
+        "channel": "affiliate",
+        "is_conversion": true,
+        "revenue_eur": 40
+    },
+    {
+        "event_id": "u6-1",
+        "user_id": "u6",
+        "event_timestamp": "2026-02-11T11:00:00Z",
+        "event_name": "page_view",
+        "channel": "search",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u6-2",
+        "user_id": "u6",
+        "event_timestamp": "2026-02-12T11:00:00Z",
+        "event_name": "product_view",
+        "channel": "search",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u7-1",
+        "user_id": "u7",
+        "event_timestamp": "2026-02-07T16:00:00Z",
+        "event_name": "page_view",
+        "channel": "social",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u7-2",
+        "user_id": "u7",
+        "event_timestamp": "2026-03-04T16:00:00Z",
+        "event_name": "purchase",
+        "channel": "social",
+        "is_conversion": true,
+        "revenue_eur": 95
+    },
+    {
+        "event_id": "u8-1",
+        "user_id": "u8",
+        "event_timestamp": "2026-02-14T13:00:00Z",
+        "event_name": "page_view",
+        "channel": "display",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u9-1",
+        "user_id": "u9",
+        "event_timestamp": "2026-02-09T09:30:00Z",
+        "event_name": "page_view",
+        "channel": "search",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u9-2",
+        "user_id": "u9",
+        "event_timestamp": "2026-03-02T09:30:00Z",
+        "event_name": "purchase",
+        "channel": "search",
+        "is_conversion": true,
+        "revenue_eur": 110
+    },
+    {
+        "event_id": "u10-1",
+        "user_id": "u10",
+        "event_timestamp": "2026-02-04T14:00:00Z",
+        "event_name": "page_view",
+        "channel": "email",
+        "is_conversion": false,
+        "revenue_eur": 0
+    },
+    {
+        "event_id": "u10-2",
+        "user_id": "u10",
+        "event_timestamp": "2026-02-18T14:00:00Z",
+        "event_name": "add_to_cart",
+        "channel": "email",
+        "is_conversion": false,
+        "revenue_eur": 0
+    }
+]

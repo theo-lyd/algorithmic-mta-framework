@@ -1,0 +1,73 @@
+{
+  "markov_summary": {
+    "channels": 5,
+    "share_sum": 1.0,
+    "max_channel_share": 0.2760736196319018,
+    "min_channel_share": 0.11042944785276071
+  },
+  "total_conversions": 4,
+  "removal_effects": [
+    {
+      "channel": "affiliate",
+      "base_conversion_probability": 0.8,
+      "removed_conversion_probability": 0.6,
+      "removal_effect": 0.20000000000000007
+    },
+    {
+      "channel": "display",
+      "base_conversion_probability": 0.8,
+      "removed_conversion_probability": 0.68,
+      "removal_effect": 0.12
+    },
+    {
+      "channel": "email",
+      "base_conversion_probability": 0.8,
+      "removed_conversion_probability": 0.6,
+      "removal_effect": 0.20000000000000007
+    },
+    {
+      "channel": "search",
+      "base_conversion_probability": 0.8,
+      "removed_conversion_probability": 0.5,
+      "removal_effect": 0.30000000000000004
+    },
+    {
+      "channel": "social",
+      "base_conversion_probability": 0.8,
+      "removed_conversion_probability": 0.5333333333333333,
+      "removal_effect": 0.2666666666666667
+    }
+  ],
+  "normalized_attribution": [
+    {
+      "channel": "affiliate",
+      "removal_effect": 0.20000000000000007,
+      "attribution_share": 0.18404907975460125,
+      "attributed_conversions": 0.736196319018405
+    },
+    {
+      "channel": "display",
+      "removal_effect": 0.12,
+      "attribution_share": 0.11042944785276071,
+      "attributed_conversions": 0.44171779141104284
+    },
+    {
+      "channel": "email",
+      "removal_effect": 0.20000000000000007,
+      "attribution_share": 0.18404907975460125,
+      "attributed_conversions": 0.736196319018405
+    },
+    {
+      "channel": "search",
+      "removal_effect": 0.30000000000000004,
+      "attribution_share": 0.2760736196319018,
+      "attributed_conversions": 1.1042944785276072
+    },
+    {
+      "channel": "social",
+      "removal_effect": 0.2666666666666667,
+      "attribution_share": 0.24539877300613497,
+      "attributed_conversions": 0.9815950920245399
+    }
+  ]
+}

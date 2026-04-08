@@ -1,0 +1,32 @@
+[
+    {
+        "conversion_id": "c-1",
+        "channel": "search",
+        "true_weight": 0.3
+    },
+    {
+        "conversion_id": "c-1",
+        "channel": "social",
+        "true_weight": 0.7
+    },
+    {
+        "conversion_id": "c-2",
+        "channel": "email",
+        "true_weight": 1.0
+    },
+    {
+        "conversion_id": "c-4",
+        "channel": "social",
+        "true_weight": 0.4
+    },
+    {
+        "conversion_id": "c-4",
+        "channel": "search",
+        "true_weight": 0.6
+    },
+    {
+        "conversion_id": "c-5",
+        "channel": "affiliate",
+        "true_weight": 1.0
+    }
+]

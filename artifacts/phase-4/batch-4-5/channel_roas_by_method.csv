@@ -1,0 +1,17 @@
+method,channel,attributed_revenue_eur,channel_spend_eur,roas
+first_touch,affiliate,50.0,20.0,2.5
+first_touch,email,80.0,40.0,2.0
+first_touch,search,120.0,120.0,1.0
+first_touch,social,150.0,100.0,1.5
+last_touch,affiliate,50.0,20.0,2.5
+last_touch,email,80.0,40.0,2.0
+last_touch,search,150.0,120.0,1.25
+last_touch,social,120.0,100.0,1.2
+linear,affiliate,50.0,20.0,2.5
+linear,email,80.0,40.0,2.0
+linear,search,135.0,120.0,1.125
+linear,social,135.0,100.0,1.35
+time_decay,affiliate,50.0,20.0,2.5
+time_decay,email,80.0,40.0,2.0
+time_decay,search,135.0283653946862,120.0,1.1252363782890518
+time_decay,social,134.9716346053138,100.0,1.349716346053138

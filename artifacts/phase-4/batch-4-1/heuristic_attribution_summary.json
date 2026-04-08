@@ -1,0 +1,35 @@
+{
+  "conversions": 4,
+  "methods": [
+    "first_touch",
+    "last_touch",
+    "linear",
+    "time_decay"
+  ],
+  "benchmark": [
+    {
+      "method": "time_decay",
+      "mae": 0.09988539233915979,
+      "rmse": 0.12898852421469392,
+      "max_abs_error": 0.19991404424928927
+    },
+    {
+      "method": "linear",
+      "mae": 0.09999999999999998,
+      "rmse": 0.12909944487358055,
+      "max_abs_error": 0.2
+    },
+    {
+      "method": "last_touch",
+      "mae": 0.2333333333333333,
+      "rmse": 0.2886751345948129,
+      "max_abs_error": 0.4
+    },
+    {
+      "method": "first_touch",
+      "mae": 0.43333333333333335,
+      "rmse": 0.532290647422377,
+      "max_abs_error": 0.7
+    }
+  ]
+}

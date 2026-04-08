@@ -1,0 +1,134 @@
+[
+    {
+        "event_id": "a-1001",
+        "journey_id": "j-1",
+        "user_id": "u-1",
+        "event_timestamp": "2026-03-01T09:00:00Z",
+        "channel": "search",
+        "event_name": "page_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-1002",
+        "journey_id": "j-1",
+        "user_id": "u-1",
+        "event_timestamp": "2026-03-01T09:05:00Z",
+        "channel": "social",
+        "event_name": "product_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-1003",
+        "journey_id": "j-1",
+        "user_id": "u-1",
+        "event_timestamp": "2026-03-01T09:20:00Z",
+        "channel": "social",
+        "event_name": "purchase",
+        "is_conversion": true,
+        "conversion_id": "c-1",
+        "net_revenue_eur": 120
+    },
+    {
+        "event_id": "a-2001",
+        "journey_id": "j-2",
+        "user_id": "u-2",
+        "event_timestamp": "2026-03-02T10:00:00Z",
+        "channel": "email",
+        "event_name": "page_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-2002",
+        "journey_id": "j-2",
+        "user_id": "u-2",
+        "event_timestamp": "2026-03-02T10:10:00Z",
+        "channel": "email",
+        "event_name": "purchase",
+        "is_conversion": true,
+        "conversion_id": "c-2",
+        "net_revenue_eur": 80
+    },
+    {
+        "event_id": "a-3001",
+        "journey_id": "j-3",
+        "user_id": "u-3",
+        "event_timestamp": "2026-03-03T11:00:00Z",
+        "channel": "display",
+        "event_name": "page_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-3002",
+        "journey_id": "j-3",
+        "user_id": "u-3",
+        "event_timestamp": "2026-03-03T11:08:00Z",
+        "channel": "search",
+        "event_name": "product_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-4001",
+        "journey_id": "j-4",
+        "user_id": "u-4",
+        "event_timestamp": "2026-03-04T12:00:00Z",
+        "channel": "social",
+        "event_name": "page_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-4002",
+        "journey_id": "j-4",
+        "user_id": "u-4",
+        "event_timestamp": "2026-03-04T12:15:00Z",
+        "channel": "search",
+        "event_name": "add_to_cart",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-4003",
+        "journey_id": "j-4",
+        "user_id": "u-4",
+        "event_timestamp": "2026-03-04T12:35:00Z",
+        "channel": "search",
+        "event_name": "purchase",
+        "is_conversion": true,
+        "conversion_id": "c-4",
+        "net_revenue_eur": 150
+    },
+    {
+        "event_id": "a-5001",
+        "journey_id": "j-5",
+        "user_id": "u-5",
+        "event_timestamp": "2026-03-05T13:00:00Z",
+        "channel": "affiliate",
+        "event_name": "page_view",
+        "is_conversion": false,
+        "conversion_id": "",
+        "net_revenue_eur": 0
+    },
+    {
+        "event_id": "a-5002",
+        "journey_id": "j-5",
+        "user_id": "u-5",
+        "event_timestamp": "2026-03-05T13:20:00Z",
+        "channel": "affiliate",
+        "event_name": "purchase",
+        "is_conversion": true,
+        "conversion_id": "c-5",
+        "net_revenue_eur": 50
+    }
+]

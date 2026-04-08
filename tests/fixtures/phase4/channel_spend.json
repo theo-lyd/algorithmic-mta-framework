@@ -1,0 +1,22 @@
+[
+    {
+        "channel": "search",
+        "channel_spend_eur": 120.0
+    },
+    {
+        "channel": "social",
+        "channel_spend_eur": 100.0
+    },
+    {
+        "channel": "email",
+        "channel_spend_eur": 40.0
+    },
+    {
+        "channel": "affiliate",
+        "channel_spend_eur": 20.0
+    },
+    {
+        "channel": "display",
+        "channel_spend_eur": 30.0
+    }
+]
