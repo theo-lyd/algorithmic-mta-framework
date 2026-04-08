@@ -1,0 +1,42 @@
+[
+    {
+        "record_id": "id-001",
+        "crm_customer_id": "crm-100",
+        "email_hash": "ehash-a",
+        "phone_hash": "phash-a",
+        "user_pseudo_id": "u-100",
+        "device_id": "d-100"
+    },
+    {
+        "record_id": "id-002",
+        "crm_customer_id": "",
+        "email_hash": "ehash-a",
+        "phone_hash": "",
+        "user_pseudo_id": "u-101",
+        "device_id": ""
+    },
+    {
+        "record_id": "id-003",
+        "crm_customer_id": "crm-200",
+        "email_hash": "ehash-b",
+        "phone_hash": "phash-b",
+        "user_pseudo_id": "u-200",
+        "device_id": "d-200"
+    },
+    {
+        "record_id": "id-004",
+        "crm_customer_id": "crm-201",
+        "email_hash": "ehash-b",
+        "phone_hash": "",
+        "user_pseudo_id": "u-201",
+        "device_id": "d-201"
+    },
+    {
+        "record_id": "id-005",
+        "crm_customer_id": "",
+        "email_hash": "",
+        "phone_hash": "",
+        "user_pseudo_id": "",
+        "device_id": ""
+    }
+]
