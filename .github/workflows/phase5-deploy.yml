@@ -1,0 +1,44 @@
+name: phase5-deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Target environment
+        required: true
+        type: choice
+        options: [staging, production]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build reproducible artifact package
+        run: |
+          bash scripts/package_model_artifacts.sh
+          python scripts/version_artifacts.py
+
+      - name: Run reliability and cost gates
+        run: |
+          PYTHONPATH=. python ingestion/pipeline/validate_reliability_monitors.py
+          PYTHONPATH=. python ingestion/pipeline/validate_performance_cost.py
+
+      - name: Upload deploy artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: phase5-deploy-artifacts-${{ inputs.environment }}
+          path: artifacts/phase-5

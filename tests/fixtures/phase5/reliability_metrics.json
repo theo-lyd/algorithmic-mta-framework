@@ -1,0 +1,42 @@
+{
+    "freshness": [
+        {
+            "event_ts": "2026-04-08T11:10:00Z",
+            "observed_at": "2026-04-08T12:00:00Z"
+        },
+        {
+            "event_ts": "2026-04-08T11:20:00Z",
+            "observed_at": "2026-04-08T12:00:00Z"
+        }
+    ],
+    "volume": [
+        {
+            "baseline_count": 1000,
+            "current_count": 920
+        },
+        {
+            "baseline_count": 1020,
+            "current_count": 920
+        },
+        {
+            "baseline_count": 980,
+            "current_count": 920
+        }
+    ],
+    "distribution_baseline": {
+        "search": 0.4,
+        "social": 0.3,
+        "email": 0.2,
+        "affiliate": 0.1
+    },
+    "distribution_current": {
+        "search": 0.38,
+        "social": 0.31,
+        "email": 0.2,
+        "affiliate": 0.11
+    },
+    "pixel": {
+        "spend_eur": 500.0,
+        "page_views": 0
+    }
+}

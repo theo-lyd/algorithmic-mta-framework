@@ -1,0 +1,14 @@
+{
+  "agreed_lift_threshold": 0.6,
+  "meets_lift_threshold": true,
+  "metrics": {
+    "auc": 0.25,
+    "average_precision": 0.5,
+    "top_decile_lift": 0.6666666666666666,
+    "brier_score": 0.39609589353555397,
+    "calibration_drift": 0.23864727303595124,
+    "positive_rate": 0.5
+  },
+  "feature_rows": 10,
+  "holdout_predictions_path": "artifacts/phase-4/batch-4-3/propensity_holdout_predictions.csv"
+}

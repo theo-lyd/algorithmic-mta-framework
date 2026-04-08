@@ -1,0 +1,52 @@
+{
+    "sessions": [
+        {
+            "session_id": "s-1",
+            "user_id": "u-1"
+        },
+        {
+            "session_id": "s-2",
+            "user_id": "u-2"
+        },
+        {
+            "session_id": "s-3",
+            "user_id": "u-3"
+        }
+    ],
+    "conversions": [
+        {
+            "conversion_id": "c-1",
+            "session_id": "s-1",
+            "net_revenue_eur": 120.0
+        },
+        {
+            "conversion_id": "c-2",
+            "session_id": "s-2",
+            "net_revenue_eur": 80.0
+        }
+    ],
+    "attributed_revenue": [
+        {
+            "method": "markov",
+            "conversion_id": "c-1",
+            "allocated_revenue_eur": 120.0
+        },
+        {
+            "method": "markov",
+            "conversion_id": "c-2",
+            "allocated_revenue_eur": 80.0
+        }
+    ],
+    "boundary_rows": [
+        {
+            "conversion_id": "c-1",
+            "lookback_days": 30,
+            "session_gap_minutes": 12
+        },
+        {
+            "conversion_id": "c-2",
+            "lookback_days": 20,
+            "session_gap_minutes": 8
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+query_name,avg_runtime_seconds,p95_runtime_seconds,avg_scanned_gb,runs
+gold_roas_mart,138.5,144.35,3.05,2
+silver_sessions,16.5,17.85,0.75,2
+dim_campaign,6.0,6.0,0.3,1

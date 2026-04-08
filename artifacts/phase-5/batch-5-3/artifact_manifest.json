@@ -1,0 +1,21 @@
+{
+  "manifest_version": "1.0.0",
+  "artifact_count": 3,
+  "artifacts": [
+    {
+      "path": "artifacts/phase-4/batch-4-2/markov_attribution_summary.json",
+      "sha256": "6ef2b7b5492d06ca901aceb8e33526d1938071e890ce59b64e135800aae97443",
+      "size_bytes": 2010
+    },
+    {
+      "path": "artifacts/phase-4/batch-4-3/propensity_model_summary.json",
+      "sha256": "8b67302c44ea2c1a724e947c50575ae11ff81fdc1cd90457a9f749ac0ad18906",
+      "size_bytes": 405
+    },
+    {
+      "path": "artifacts/phase-4/batch-4-5/finance_bridge_summary.json",
+      "sha256": "0c17dbe10882442a5f05719395ba9b35e0cf703ad566b04bbdc889b71089c18f",
+      "size_bytes": 3517
+    }
+  ]
+}

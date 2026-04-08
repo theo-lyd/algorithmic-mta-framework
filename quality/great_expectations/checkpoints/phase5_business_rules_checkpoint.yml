@@ -1,0 +1,9 @@
+name: phase5_business_rules_checkpoint
+config_version: 1.0
+class_name: Checkpoint
+run_name_template: "%Y%m%d-%H%M%S-phase5-batch52"
+validations:
+  - batch_request:
+      datasource_name: governance_datasource
+      data_asset_name: attribution_governance
+    expectation_suite_name: phase5_business_rules_suite

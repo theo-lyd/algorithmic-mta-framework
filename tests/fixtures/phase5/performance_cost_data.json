@@ -1,0 +1,61 @@
+{
+    "query_runs": [
+        {
+            "query_name": "gold_roas_mart",
+            "runtime_seconds": 145,
+            "scanned_gb": 3.1
+        },
+        {
+            "query_name": "gold_roas_mart",
+            "runtime_seconds": 132,
+            "scanned_gb": 3.0
+        },
+        {
+            "query_name": "silver_sessions",
+            "runtime_seconds": 18,
+            "scanned_gb": 0.8
+        },
+        {
+            "query_name": "silver_sessions",
+            "runtime_seconds": 15,
+            "scanned_gb": 0.7
+        },
+        {
+            "query_name": "dim_campaign",
+            "runtime_seconds": 6,
+            "scanned_gb": 0.3
+        }
+    ],
+    "partition_stats": [
+        {
+            "partition_date": "2026-04-05",
+            "partition_rows": 200000,
+            "late_arrival_pct": 0.01
+        },
+        {
+            "partition_date": "2026-04-06",
+            "partition_rows": 1300000,
+            "late_arrival_pct": 0.03
+        },
+        {
+            "partition_date": "2026-04-07",
+            "partition_rows": 900000,
+            "late_arrival_pct": 0.08
+        }
+    ],
+    "cost_rows": [
+        {
+            "component": "dbt-transform",
+            "cost_eur": 1800
+        },
+        {
+            "component": "airflow-orchestration",
+            "cost_eur": 700
+        },
+        {
+            "component": "ml-scoring",
+            "cost_eur": 650
+        }
+    ],
+    "monthly_budget_eur": 4000
+}

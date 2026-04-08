@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "name": "freshness_monitor",
+      "success": true,
+      "details": {
+        "lag_minutes": 40.0,
+        "max_lag_minutes": 60,
+        "latest_event_ts": "2026-04-08 11:20:00+00:00"
+      }
+    },
+    {
+      "name": "volume_monitor",
+      "success": true,
+      "details": {
+        "baseline": 1000.0,
+        "current": 920.0,
+        "ratio": 0.92,
+        "drop_threshold_ratio": 0.7
+      }
+    },
+    {
+      "name": "schema_monitor",
+      "success": true,
+      "details": {
+        "missing_columns": [],
+        "unexpected_columns": []
+      }
+    },
+    {
+      "name": "distribution_monitor",
+      "success": true,
+      "details": {
+        "l1_distance": 0.04000000000000002,
+        "max_l1_distance": 0.2
+      }
+    },
+    {
+      "name": "pixel_downtime_detection",
+      "success": false,
+      "details": {
+        "spend_eur": 500.0,
+        "page_views": 0,
+        "rule": "spend_active_and_page_views_zero"
+      }
+    }
+  ],
+  "summary": {
+    "checks_total": 5,
+    "checks_failed": 1,
+    "failed_names": [
+      "pixel_downtime_detection"
+    ],
+    "severity": "sev-1",
+    "routing": {
+      "channel": "pagerduty-data-platform",
+      "owner": "oncall-data-sre",
+      "runbook": "doc/phase-5/runbook-sev1-pixel-downtime.md"
+    }
+  }
+}

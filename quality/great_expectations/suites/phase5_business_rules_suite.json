@@ -1,0 +1,38 @@
+{
+    "expectation_suite_name": "phase5_business_rules_suite",
+    "meta": {
+        "phase": "5",
+        "batch": "5.2",
+        "description": "Business-rule governance checks for session integrity, attribution conservation, and lookback boundaries."
+    },
+    "expectations": [
+        {
+            "expectation_type": "expect_column_values_to_be_in_set",
+            "kwargs": {
+                "column": "session_id",
+                "value_set": "$ref:sessions.session_id"
+            }
+        },
+        {
+            "expectation_type": "expect_table_row_count_to_equal_other_table",
+            "kwargs": {
+                "table_a": "conversion_totals",
+                "table_b": "attribution_totals"
+            }
+        },
+        {
+            "expectation_type": "expect_column_pair_values_a_to_be_less_than_b",
+            "kwargs": {
+                "column_A": "lookback_days",
+                "column_B": "max_lookback_days"
+            }
+        },
+        {
+            "expectation_type": "expect_column_values_to_be_between",
+            "kwargs": {
+                "column": "session_gap_minutes",
+                "max_value": 30
+            }
+        }
+    ]
+}

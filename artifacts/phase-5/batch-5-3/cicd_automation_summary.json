@@ -1,0 +1,12 @@
+{
+  "required_workflows": [
+    ".github/workflows/phase5-pr-checks.yml",
+    ".github/workflows/phase5-deploy.yml"
+  ],
+  "existing_workflows": [
+    ".github/workflows/phase5-pr-checks.yml",
+    ".github/workflows/phase5-deploy.yml"
+  ],
+  "missing_workflows": [],
+  "workflows_complete": true
+}

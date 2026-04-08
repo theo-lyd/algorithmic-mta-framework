@@ -1,0 +1,8 @@
+[
+    "event_id",
+    "event_ts",
+    "session_id",
+    "user_id",
+    "channel",
+    "event_name"
+]

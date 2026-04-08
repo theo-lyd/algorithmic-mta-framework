@@ -1,0 +1,36 @@
+{
+  "checks": [
+    {
+      "name": "referential_integrity_conversion_to_session",
+      "success": true,
+      "details": {
+        "invalid_rows": 0
+      }
+    },
+    {
+      "name": "attribution_conservation_no_ghost_revenue",
+      "success": true,
+      "details": {
+        "expected": 200.0,
+        "observed": 200.0,
+        "delta": 0.0,
+        "tolerance": 1e-08
+      }
+    },
+    {
+      "name": "lookback_and_session_boundary_assertions",
+      "success": true,
+      "details": {
+        "lookback_violation_rows": 0,
+        "session_gap_violation_rows": 0,
+        "max_lookback_days": 30,
+        "max_session_gap_minutes": 30
+      }
+    }
+  ],
+  "summary": {
+    "checks_total": 3,
+    "checks_failed": 0,
+    "failed_names": []
+  }
+}

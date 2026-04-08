@@ -1,0 +1,67 @@
+{
+  "recommendations": [
+    {
+      "query_name": "dim_campaign",
+      "recommendation": "view",
+      "p95_runtime_seconds": 6.0,
+      "avg_scanned_gb": 0.3
+    },
+    {
+      "query_name": "gold_roas_mart",
+      "recommendation": "incremental_partitioned",
+      "p95_runtime_seconds": 144.35,
+      "avg_scanned_gb": 3.05
+    },
+    {
+      "query_name": "silver_sessions",
+      "recommendation": "keep_table",
+      "p95_runtime_seconds": 17.85,
+      "avg_scanned_gb": 0.75
+    }
+  ],
+  "incremental_plan": [
+    {
+      "partition_date": "2026-04-05",
+      "partition_rows": 200000,
+      "late_arrival_pct": 0.01,
+      "recommended_strategy": "append_only"
+    },
+    {
+      "partition_date": "2026-04-06",
+      "partition_rows": 1300000,
+      "late_arrival_pct": 0.03,
+      "recommended_strategy": "merge_on_partition"
+    },
+    {
+      "partition_date": "2026-04-07",
+      "partition_rows": 900000,
+      "late_arrival_pct": 0.08,
+      "recommended_strategy": "merge_on_partition"
+    }
+  ],
+  "cost_dashboard": {
+    "monthly_budget_eur": 4000.0,
+    "total_cost_eur": 3150.0,
+    "pct_of_budget": 0.7875,
+    "by_component": [
+      {
+        "component": "dbt-transform",
+        "cost_eur": 1800
+      },
+      {
+        "component": "airflow-orchestration",
+        "cost_eur": 700
+      },
+      {
+        "component": "ml-scoring",
+        "cost_eur": 650
+      }
+    ]
+  },
+  "cost_alert": {
+    "threshold": 0.75,
+    "pct_of_budget": 0.7875,
+    "alert_triggered": true,
+    "severity": "medium"
+  }
+}
