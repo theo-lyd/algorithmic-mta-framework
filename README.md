@@ -27,6 +27,13 @@ The repository is structured to support end-to-end analytics engineering and ML 
 - Execution-Ready Master Backlog: [doc/execution-ready-master-backlog.md](doc/execution-ready-master-backlog.md) — 40 stories, 273 points, 10 sprints with role ownership
 
 ### Phase 0 Batch Artifacts
+- **Batch 0.1 (Architecture and Standards Baseline)**
+	- Architecture and Domains: [doc/phase-0/batch-0-1-architecture-standards.md](doc/phase-0/batch-0-1-architecture-standards.md)
+	- Standards Catalog: [doc/phase-0/standards-catalog.md](doc/phase-0/standards-catalog.md)
+	- SLA/SLO Matrix: [doc/phase-0/sla-slo-matrix.md](doc/phase-0/sla-slo-matrix.md)
+	- Batch Report: [doc/batches/phase-0-batch-0-1-report.md](doc/batches/phase-0-batch-0-1-report.md)
+	- Command Log: [doc/batches/phase-0-batch-0-1-commands.md](doc/batches/phase-0-batch-0-1-commands.md)
+
 - **Batch 0.4 (Jira Import & Operationalization)**
   - Completion Report: [doc/batches/phase-0-batch-0-4-jira-import.md](doc/batches/phase-0-batch-0-4-jira-import.md) — What was built, why decisions, issues resolved, acceptance criteria (1400+ lines)
   - Command Log: [doc/batches/phase-0-batch-0-4-commands.md](doc/batches/phase-0-batch-0-4-commands.md) — 30+ commands with expected outputs, troubleshooting guide (500+ lines)
