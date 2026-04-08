@@ -259,6 +259,51 @@ The repository is structured to support end-to-end analytics engineering and ML 
 - **Phase 4 Gate Check**
 	- Gate Check Report: [doc/phase-4/phase-4-gate-check-report.md](doc/phase-4/phase-4-gate-check-report.md)
 
+### Phase 5 Batch Artifacts
+- **Batch 5.1 (End-to-End Data Reliability)**
+	- Reliability Monitors: [ingestion/pipeline/reliability_monitors.py](ingestion/pipeline/reliability_monitors.py)
+	- Fixture Data: [tests/fixtures/phase5/reliability_metrics.json](tests/fixtures/phase5/reliability_metrics.json)
+	- Unit Tests: [tests/phase5/test_reliability_monitors.py](tests/phase5/test_reliability_monitors.py)
+	- Validation Runner: [ingestion/pipeline/validate_reliability_monitors.py](ingestion/pipeline/validate_reliability_monitors.py)
+	- Validation Evidence: [doc/phase-5/batch-5-1-reliability-validation.md](doc/phase-5/batch-5-1-reliability-validation.md)
+	- Batch Report: [doc/batches/phase-5-batch-5-1-report.md](doc/batches/phase-5-batch-5-1-report.md)
+	- Command Log: [doc/batches/phase-5-batch-5-1-commands.md](doc/batches/phase-5-batch-5-1-commands.md)
+
+- **Batch 5.2 (Great Expectations Business-Rule Suite)**
+	- Business Rule Contracts: [quality/contracts/business_rules_phase5.py](quality/contracts/business_rules_phase5.py)
+	- GE Suite: [quality/great_expectations/suites/phase5_business_rules_suite.json](quality/great_expectations/suites/phase5_business_rules_suite.json)
+	- GE Checkpoint: [quality/great_expectations/checkpoints/phase5_business_rules_checkpoint.yml](quality/great_expectations/checkpoints/phase5_business_rules_checkpoint.yml)
+	- Unit Tests: [tests/phase5/test_business_rules_phase5.py](tests/phase5/test_business_rules_phase5.py)
+	- Validation Runner: [ingestion/pipeline/validate_business_rules_phase5.py](ingestion/pipeline/validate_business_rules_phase5.py)
+	- Validation Evidence: [doc/phase-5/batch-5-2-business-rules-validation.md](doc/phase-5/batch-5-2-business-rules-validation.md)
+	- Batch Report: [doc/batches/phase-5-batch-5-2-report.md](doc/batches/phase-5-batch-5-2-report.md)
+	- Command Log: [doc/batches/phase-5-batch-5-2-commands.md](doc/batches/phase-5-batch-5-2-commands.md)
+
+- **Batch 5.3 (CI/CD Automation)**
+	- PR Workflow: [.github/workflows/phase5-pr-checks.yml](.github/workflows/phase5-pr-checks.yml)
+	- Deploy Workflow: [.github/workflows/phase5-deploy.yml](.github/workflows/phase5-deploy.yml)
+	- Packaging Script: [scripts/package_model_artifacts.sh](scripts/package_model_artifacts.sh)
+	- Versioning Script: [scripts/version_artifacts.py](scripts/version_artifacts.py)
+	- Validation Runner: [ingestion/pipeline/validate_cicd_automation.py](ingestion/pipeline/validate_cicd_automation.py)
+	- Validation Evidence: [doc/phase-5/batch-5-3-cicd-validation.md](doc/phase-5/batch-5-3-cicd-validation.md)
+	- Batch Report: [doc/batches/phase-5-batch-5-3-report.md](doc/batches/phase-5-batch-5-3-report.md)
+	- Command Log: [doc/batches/phase-5-batch-5-3-commands.md](doc/batches/phase-5-batch-5-3-commands.md)
+
+- **Batch 5.4 (Performance and Cost Optimization)**
+	- Performance and Cost Logic: [ingestion/pipeline/performance_cost.py](ingestion/pipeline/performance_cost.py)
+	- Fixture Data: [tests/fixtures/phase5/performance_cost_data.json](tests/fixtures/phase5/performance_cost_data.json)
+	- Unit Tests: [tests/phase5/test_performance_cost.py](tests/phase5/test_performance_cost.py)
+	- Validation Runner: [ingestion/pipeline/validate_performance_cost.py](ingestion/pipeline/validate_performance_cost.py)
+	- Validation Evidence: [doc/phase-5/batch-5-4-performance-cost-validation.md](doc/phase-5/batch-5-4-performance-cost-validation.md)
+	- Batch Report: [doc/batches/phase-5-batch-5-4-report.md](doc/batches/phase-5-batch-5-4-report.md)
+	- Command Log: [doc/batches/phase-5-batch-5-4-commands.md](doc/batches/phase-5-batch-5-4-commands.md)
+
+- **Phase 5 Gate Check**
+	- Gate Check Report: [doc/phase-5/phase-5-gate-check-report.md](doc/phase-5/phase-5-gate-check-report.md)
+	- SEV-1 Runbook: [doc/phase-5/runbook-sev1-pixel-downtime.md](doc/phase-5/runbook-sev1-pixel-downtime.md)
+	- SEV-2 Runbook: [doc/phase-5/runbook-sev2-freshness-schema.md](doc/phase-5/runbook-sev2-freshness-schema.md)
+	- SEV-3 Runbook: [doc/phase-5/runbook-sev3-volume-distribution.md](doc/phase-5/runbook-sev3-volume-distribution.md)
+
 ## Quick Start
 
 1. Install dependencies:
