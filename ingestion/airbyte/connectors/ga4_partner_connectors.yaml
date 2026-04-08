@@ -1,0 +1,45 @@
+version: 1
+connectors:
+  - name: ga4_events
+    source_type: ga4
+    destination: parquet_bronze
+    namespace: marketing_events
+    sync_mode: incremental_append
+    cursor_field: event_timestamp
+    primary_key:
+      - event_id
+      - user_pseudo_id
+    dedup_hint:
+      strategy: latest_by_cursor
+      key_seed_fields:
+        - event_id
+        - event_timestamp
+        - user_pseudo_id
+    schedule:
+      cron: "0 * * * *"
+      timezone: "UTC"
+    late_arrival:
+      expected_delay_hours: 2
+      replay_window_days: 2
+
+  - name: partner_post_click
+    source_type: partner_feed
+    destination: parquet_bronze
+    namespace: partner_events
+    sync_mode: incremental_append
+    cursor_field: click_timestamp
+    primary_key:
+      - partner_event_id
+      - partner_name
+    dedup_hint:
+      strategy: latest_by_cursor
+      key_seed_fields:
+        - partner_event_id
+        - click_timestamp
+        - partner_name
+    schedule:
+      cron: "15 * * * *"
+      timezone: "UTC"
+    late_arrival:
+      expected_delay_hours: 24
+      replay_window_days: 7
