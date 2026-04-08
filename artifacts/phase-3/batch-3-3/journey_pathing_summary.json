@@ -1,0 +1,55 @@
+{
+  "journey_summary": {
+    "touchpoints_rows": 5,
+    "journey_rows": 5,
+    "conversion_rows": 2,
+    "unique_journeys": 5,
+    "lookback_window_days": 30
+  },
+  "sample_journeys": [
+    {
+      "user_pseudo_id": "u-journey-1",
+      "journey_id": "u-journey-1|journey-1",
+      "journey_path": "cmp-001 > cmp-002 > cmp-002",
+      "conversion_count": 1
+    },
+    {
+      "user_pseudo_id": "u-journey-1",
+      "journey_id": "u-journey-1|journey-2",
+      "journey_path": "cmp-003",
+      "conversion_count": 0
+    },
+    {
+      "user_pseudo_id": "u-journey-2",
+      "journey_id": "u-journey-2|journey-1",
+      "journey_path": "cmp-010",
+      "conversion_count": 0
+    },
+    {
+      "user_pseudo_id": "u-journey-2",
+      "journey_id": "u-journey-2|journey-2",
+      "journey_path": "cmp-011",
+      "conversion_count": 1
+    },
+    {
+      "user_pseudo_id": "u-journey-2",
+      "journey_id": "u-journey-2|journey-3",
+      "journey_path": "cmp-012",
+      "conversion_count": 0
+    }
+  ],
+  "sample_conversions": [
+    {
+      "conversion_event_id": "j-1004",
+      "journey_id": "u-journey-1|journey-1",
+      "attribution_path": "cmp-001 > cmp-002",
+      "lookback_touchpoints": 2
+    },
+    {
+      "conversion_event_id": "j-2002",
+      "journey_id": "u-journey-2|journey-2",
+      "attribution_path": "",
+      "lookback_touchpoints": 0
+    }
+  ]
+}
