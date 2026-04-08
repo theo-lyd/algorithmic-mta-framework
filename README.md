@@ -54,6 +54,10 @@ The repository is structured to support end-to-end analytics engineering and ML 
 	- Closure Batch Report: [doc/batches/phase-0-batch-0-5-closure-report.md](doc/batches/phase-0-batch-0-5-closure-report.md)
 	- Closure Command Log: [doc/batches/phase-0-batch-0-5-commands.md](doc/batches/phase-0-batch-0-5-commands.md)
 
+- **Batch 0.6 (Evidence Timestamp Refresh)**
+	- Micro-Batch Report: [doc/batches/phase-0-batch-0-6-evidence-refresh-report.md](doc/batches/phase-0-batch-0-6-evidence-refresh-report.md)
+	- Micro-Batch Command Log: [doc/batches/phase-0-batch-0-6-evidence-refresh-commands.md](doc/batches/phase-0-batch-0-6-evidence-refresh-commands.md)
+
 - **Batch 0.4 (Jira Import & Operationalization)**
   - Completion Report: [doc/batches/phase-0-batch-0-4-jira-import.md](doc/batches/phase-0-batch-0-4-jira-import.md) — What was built, why decisions, issues resolved, acceptance criteria (1400+ lines)
   - Command Log: [doc/batches/phase-0-batch-0-4-commands.md](doc/batches/phase-0-batch-0-4-commands.md) — 30+ commands with expected outputs, troubleshooting guide (500+ lines)
