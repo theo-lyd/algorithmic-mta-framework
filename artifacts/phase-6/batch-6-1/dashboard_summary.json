@@ -1,0 +1,27 @@
+{
+  "batch": "6.1",
+  "name": "Executive Dashboards",
+  "status": "passing",
+  "timestamp": "2026-04-08T13:50:51.570238",
+  "dashboards_generated": {
+    "attribution_war_count": 4,
+    "waste_report_count": 4,
+    "roas_drilldown_count": 4
+  },
+  "key_insights": {
+    "total_channels": 4,
+    "channels_to_reallocate": 3,
+    "average_roas": 2.401564337459716,
+    "top_waste_channel": "display",
+    "waste_score_top": 0.20500000000000002,
+    "best_roas_channel": "email",
+    "best_roas_value": 3.5454545454545454,
+    "biggest_attribution_shift_channel": "social",
+    "biggest_shift_variance_pct": 27.500000000000004
+  },
+  "exit_criteria": {
+    "dashboard_metrics_trusted": true,
+    "finance_reconciled": true,
+    "executive_ready": true
+  }
+}

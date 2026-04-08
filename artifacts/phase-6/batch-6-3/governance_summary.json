@@ -1,0 +1,44 @@
+{
+  "batch": "6.3",
+  "name": "Decision Governance and Adoption",
+  "status": "passing",
+  "timestamp": "2026-04-08T13:52:05.095517",
+  "kpi_glossary": {
+    "total_kpis": 7,
+    "valid_kpis": 7,
+    "invalid_kpis": 0,
+    "domains": [
+      "attribution",
+      "efficiency",
+      "health"
+    ]
+  },
+  "monthly_decision_ritual": {
+    "ceremony_name": "Marketing Budget Council",
+    "participants": 4,
+    "pre_work_items": 4,
+    "decision_criteria": 4,
+    "status": "ready"
+  },
+  "training_curriculum": {
+    "total_modules": 3,
+    "total_hours": 3.2,
+    "roles_covered": [
+      "CMO",
+      "Finance Controller",
+      "Growth Manager"
+    ]
+  },
+  "governance_artifacts": {
+    "kpi_definitions": 7,
+    "decision_ritual_agenda_items": 6,
+    "training_modules": 3,
+    "total_participants": 3
+  },
+  "exit_criteria": {
+    "kpi_definitions_complete": true,
+    "monthly_ritual_defined": true,
+    "stakeholder_roles_covered": true,
+    "adoption_ready": true
+  }
+}

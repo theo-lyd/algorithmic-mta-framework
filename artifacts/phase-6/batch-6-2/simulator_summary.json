@@ -1,0 +1,29 @@
+{
+  "batch": "6.2",
+  "name": "What-If Simulator",
+  "status": "passing",
+  "timestamp": "2026-04-08T13:51:14.242149",
+  "simulator_validation": {
+    "budget_constraints_met": true,
+    "constraint_violations": []
+  },
+  "revenue_impact": {
+    "base_revenue_eur": 581250.0,
+    "predicted_revenue_eur": 176176.49999999997,
+    "predicted_lift_eur": -405073.5,
+    "predicted_lift_pct": -69.69006451612904,
+    "confidence_lower_95_pct": 149750.02499999997,
+    "confidence_upper_95_pct": 202602.97499999998
+  },
+  "scenario_export": {
+    "winner_scenario": "proposed_allocation",
+    "predicted_lift_pct": -69.69006451612904,
+    "recommendation": "Recommend adoption of proposed_allocation scenario: predicted -69.7% revenue uplift (-405,074 EUR) with 95% CI range [149,750, 202,603]."
+  },
+  "exit_criteria": {
+    "simulator_functional": true,
+    "constraints_enforced": true,
+    "revenue_impact_quantified": true,
+    "confidence_intervals_provided": true
+  }
+}
