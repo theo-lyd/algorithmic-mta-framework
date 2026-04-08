@@ -1,0 +1,22 @@
+[
+    {
+        "raw_text": "M\u00fcnchen   Media\u00a0GmbH",
+        "expected_display_text": "M\u00fcnchen Media GmbH",
+        "expected_join_key_text": "muenchen_media_gmbh"
+    },
+    {
+        "raw_text": "Stra\u00dfe des 17. Juni",
+        "expected_display_text": "Stra\u00dfe des 17. Juni",
+        "expected_join_key_text": "strasse_des_17_juni"
+    },
+    {
+        "raw_text": "K\u00f6ln-Partner\tNord",
+        "expected_display_text": "K\u00f6ln-Partner Nord",
+        "expected_join_key_text": "koeln_partner_nord"
+    },
+    {
+        "raw_text": "  D\u00fcsseldorf\nCampaign  ",
+        "expected_display_text": "D\u00fcsseldorf Campaign",
+        "expected_join_key_text": "duesseldorf_campaign"
+    }
+]
