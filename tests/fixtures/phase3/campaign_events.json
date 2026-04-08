@@ -1,0 +1,27 @@
+[
+    {
+        "event_id": "evt-3001",
+        "campaign_id": "cmp-001",
+        "event_timestamp": "2026-01-20T10:00:00Z"
+    },
+    {
+        "event_id": "evt-3002",
+        "campaign_id": "cmp-001",
+        "event_timestamp": "2026-03-01T10:00:00Z"
+    },
+    {
+        "event_id": "evt-3003",
+        "campaign_id": "cmp-001",
+        "event_timestamp": "2026-04-10T10:00:00Z"
+    },
+    {
+        "event_id": "evt-3004",
+        "campaign_id": "cmp-002",
+        "event_timestamp": "2026-02-01T10:00:00Z"
+    },
+    {
+        "event_id": "evt-3005",
+        "campaign_id": "cmp-002",
+        "event_timestamp": "2026-04-01T10:00:00Z"
+    }
+]

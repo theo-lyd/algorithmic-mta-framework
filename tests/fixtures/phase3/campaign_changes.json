@@ -1,0 +1,42 @@
+[
+    {
+        "campaign_id": "cmp-001",
+        "effective_from": "2026-01-01T00:00:00Z",
+        "owner_name": "team_search",
+        "budget_eur": 100000.0,
+        "taxonomy_l1": "performance",
+        "taxonomy_l2": "search_brand"
+    },
+    {
+        "campaign_id": "cmp-001",
+        "effective_from": "2026-02-15T00:00:00Z",
+        "owner_name": "team_growth",
+        "budget_eur": 130000.0,
+        "taxonomy_l1": "performance",
+        "taxonomy_l2": "search_non_brand"
+    },
+    {
+        "campaign_id": "cmp-001",
+        "effective_from": "2026-04-01T00:00:00Z",
+        "owner_name": "team_growth",
+        "budget_eur": 150000.0,
+        "taxonomy_l1": "performance",
+        "taxonomy_l2": "search_non_brand"
+    },
+    {
+        "campaign_id": "cmp-002",
+        "effective_from": "2026-01-10T00:00:00Z",
+        "owner_name": "team_affiliate",
+        "budget_eur": 70000.0,
+        "taxonomy_l1": "partner",
+        "taxonomy_l2": "affiliate_core"
+    },
+    {
+        "campaign_id": "cmp-002",
+        "effective_from": "2026-03-20T00:00:00Z",
+        "owner_name": "team_affiliate",
+        "budget_eur": 85000.0,
+        "taxonomy_l1": "partner",
+        "taxonomy_l2": "affiliate_expansion"
+    }
+]
