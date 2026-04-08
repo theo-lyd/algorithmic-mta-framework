@@ -1,0 +1,1 @@
+{"dead_letter_ts": "2026-04-08T02:37:24.471066+00:00", "source_name": "ga4", "source_file_id": "ga4_2026-04-08T11", "error_message": "Event count breached anomaly threshold; quarantined for review", "raw_record": {"event_date": "2026-04-08", "source_channel": "search", "event_count": 450}}

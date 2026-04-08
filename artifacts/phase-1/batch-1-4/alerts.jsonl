@@ -1,0 +1,1 @@
+{"alert_ts": "2026-04-08T02:37:24.471301+00:00", "title": "Ingestion anomaly detected", "severity": "high", "details": "search channel event_count dropped to 450 vs baseline"}

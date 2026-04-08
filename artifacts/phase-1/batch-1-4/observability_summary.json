@@ -1,0 +1,21 @@
+{
+  "freshness": {
+    "is_fresh": true,
+    "lag_minutes": 40,
+    "threshold_minutes": 60
+  },
+  "anomaly": {
+    "sigma_threshold": 2.0,
+    "flagged_count": 1,
+    "flagged_rows": [
+      {
+        "event_date": "2026-04-08 00:00:00+00:00",
+        "source_channel": "search",
+        "event_count": 450,
+        "z_score": -2.6304933255561975
+      }
+    ]
+  },
+  "dead_letter_file": "artifacts/phase-1/batch-1-4/dead_letter_events.jsonl",
+  "alert_file": "artifacts/phase-1/batch-1-4/alerts.jsonl"
+}
