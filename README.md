@@ -45,6 +45,17 @@ The repository is structured to support end-to-end analytics engineering and ML 
 - Project Runbook: [doc/stakeholder/project-runbook.md](doc/stakeholder/project-runbook.md)
 - Business-Only Centric Report: [doc/stakeholder/business-only-centric-report.md](doc/stakeholder/business-only-centric-report.md)
 
+### Phase Issues Log
+- Phase 0 Issues: [doc/issues/phase-0-issues.md](doc/issues/phase-0-issues.md)
+- Phase 1 Issues: [doc/issues/phase-1-issues.md](doc/issues/phase-1-issues.md)
+- Phase 2 Issues: [doc/issues/phase-2-issues.md](doc/issues/phase-2-issues.md)
+- Phase 3 Issues: [doc/issues/phase-3-issues.md](doc/issues/phase-3-issues.md)
+- Phase 4 Issues: [doc/issues/phase-4-issues.md](doc/issues/phase-4-issues.md)
+- Phase 5 Issues: [doc/issues/phase-5-issues.md](doc/issues/phase-5-issues.md)
+- Phase 6 Issues: [doc/issues/phase-6-issues.md](doc/issues/phase-6-issues.md)
+- Phase 7 Issues: [doc/issues/phase-7-issues.md](doc/issues/phase-7-issues.md)
+- Phase 8 Issues: [doc/issues/phase-8-issues.md](doc/issues/phase-8-issues.md)
+
 ### Phase 0 Batch Artifacts
 - **Batch 0.1 (Architecture and Standards Baseline)**
 	- Architecture and Domains: [doc/phase-0/batch-0-1-architecture-standards.md](doc/phase-0/batch-0-1-architecture-standards.md)
